@@ -1,7 +1,5 @@
 /*
-    [DESCRIPTION]
     I wrote it in a more non-standard way and used mostly char arrays, byte and hex values
-
     Author: @nimbl0
  */
 
