@@ -1,4 +1,4 @@
-# Hacktoberfest 2020 FizzBuzz
+# :jack_o_lantern: Hacktoberfest 2020 FizzBuzz
 
 <p align="center">
 <img height="150" width="auto" src="https://i.imgur.com/5RJIOwI.png" /><br>
