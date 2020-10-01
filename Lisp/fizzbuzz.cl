@@ -1,3 +1,6 @@
+;Recursive implementation using OR evaluation
+;Author: Emblazion
+
 (defun fizzbuzz (num)
        (cond
          ((= num 101) (format t ""))
