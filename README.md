@@ -7,6 +7,13 @@ Submit creative FizzBuzz solutions in any language you want!
 
 <hr>
 
+<p align="center"><b>
+Read the official issue for an intro: <br>
+https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/issues/3
+</b></p>
+
+<hr>
+
 ## :wrench: Steps to add your solution:
 
 1. [Fork](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/fork) this repository.
