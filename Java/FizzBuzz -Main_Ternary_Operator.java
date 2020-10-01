@@ -1,5 +1,5 @@
 /*
- FizzBuzz Using For-Loop and Tenary Operator. Applied all the logic of Fizz and Buzz in single line only.
+ FizzBuzz Using For-Loop and Ternary Operator. Applied all the logic of Fizz and Buzz in single line only.
  Author: @akashprasher
 */
 
