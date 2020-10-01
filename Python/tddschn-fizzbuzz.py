@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# author: @tddschn
+# checking if a num is the multiples of 3 or 5 or 15 with simple math.
 
 import math
 import re
