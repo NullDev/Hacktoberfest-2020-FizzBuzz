@@ -1,3 +1,5 @@
+/// FizzBuzz implemented as Rust iterator using several traits from the std.
+/// Author: @j-brn
 use std::fmt::{self, Display, Formatter};
 
 /// FizzBuzz game object that holds the current number.
