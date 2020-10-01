@@ -1,4 +1,4 @@
-#A simple Python code to implement FizzBuzz
+#A very simple Python code for everybody to implement FizzBuzz
 #Author @pranay-ar
 
 for fizzbuzz in range(101):
