@@ -1,4 +1,4 @@
-# Description: An implementation using iterable
+# Description: An implementation using iterator
 # @Author: Oxel40
 
 
