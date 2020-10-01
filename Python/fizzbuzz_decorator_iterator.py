@@ -7,7 +7,7 @@ class FizzBuzz:
         return self
 
     def __next__(self):
-        if self.count >= 100:
+        if self.count >= 101:
             raise StopIteration
         else:
             if self.count % 5 == 0 and self.count % 3 == 0:
