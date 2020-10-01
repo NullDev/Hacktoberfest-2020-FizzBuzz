@@ -14,6 +14,7 @@ class fizzbuzzGame{
             console.log("FizzBuzz")
           }
           else{
+              //else it will print the only number
             console.log(this.fizzbuzzNumber)
           } 
         }
