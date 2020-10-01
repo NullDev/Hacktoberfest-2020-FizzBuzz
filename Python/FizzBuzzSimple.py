@@ -1,5 +1,5 @@
-// FizzBuzz Solution
-// MishManners, Hacktoberfest starting point
+# FizzBuzz Solution
+# MishManners, Hacktoberfest starting point
 
 import sys
 
