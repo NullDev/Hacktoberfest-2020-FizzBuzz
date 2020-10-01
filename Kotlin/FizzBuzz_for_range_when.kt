@@ -1,4 +1,4 @@
-// Basic FizzBuzz using Kotlin "Range" and "when" control flow 
+// Simple FizzBuzz using Kotlin "Range" and "when" control flow 
 // Author: @mohitDeshpande
 
 fun main() {
