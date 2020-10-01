@@ -1,0 +1,18 @@
+# Author : Utsav Ramchandra Khatu
+# Opposite FizzBuzz
+"""
+    If n is divisible by 3 and 5 we print the number
+    Else if n is not divisible 5 and divisible by 3 we print Buzz
+    Else if n is not divisible 3 and divisible by 5 we print Fizz
+    Else print FizzBuzz
+"""
+
+n = int(input())
+if n%5 == 0 and n%3 == 0 :
+    print(n)
+elif n%5 == 0 and n%3 != 0 :
+    print("Buzz")
+elif n%3 == 0 and n%5 != 0 :
+    print("Fizz")
+else :
+    print("FizzBuzz")
