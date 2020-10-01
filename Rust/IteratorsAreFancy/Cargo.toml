@@ -1,0 +1,7 @@
+[package]
+name = "iterators_are_fancy"
+version = "0.1.0"
+authors = ["j-brn <me@jbrn.eu>"]
+edition = "2018"
+
+[dependencies]
