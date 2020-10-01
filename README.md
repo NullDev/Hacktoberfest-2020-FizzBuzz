@@ -5,6 +5,8 @@
 Submit creative FizzBuzz solutions in any language you want! 
 </p>
 
+<hr>
+
 ## :wrench: Steps to add your solution:
 
 1. [Fork](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/fork) this repository.
@@ -24,8 +26,22 @@ Submit creative FizzBuzz solutions in any language you want!
 
 A sample file can be found here: https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/blob/master/JavaScript/one-liner.js
 
+<hr>
+
+## :question: What is FizzBuzz?
+
+Quick summary:
+
+> FizzBuzz is a program that prints the numbers from 1 to 100. But for multiples of three it prints “Fizz” instead of the number and for the multiples of five, it prints “Buzz”. For numbers which are multiples of both three and five it prints “FizzBuzz”.
+
+Read more about it here: https://www.tomdalling.com/blog/software-design/fizzbuzz-in-too-much-detail/
+
+<hr>
+
 ## :question: What do you mean by "creative" solutions?
 
 Well, I'm not looking for normal solutions. You know, the ones you'd find in a book or so. I'm looking for something interesting! Whether that's a fancy one-liner in the language of your choice, or perhaps a funny [eso-language](https://en.wikipedia.org/wiki/Esoteric_programming_language), or maybe an intentionally weird solution that you don't even quite understand yourself (be sure to document those!). Anyhow, the goal is to have fun and maybe even learn a thing or two. 
 
 **Happy hacking!**
+
+<hr>
