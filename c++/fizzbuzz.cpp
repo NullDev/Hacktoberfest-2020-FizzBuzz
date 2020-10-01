@@ -1,8 +1,7 @@
 
+// added fizz buzz in cpp
+// Author: @jayadevvasudevan
 
-play_arrow
-
-brightness_4
 // CPP program to print Fizz Buzz 
 #include <stdio.h> 
   
@@ -28,7 +27,11 @@ int main(void)
             printf("Buzz\t");                  
       
         else // print the number             
-            printf("%d\t", i);                  
+            printf("%d\t", i);              
+play_arrow
+
+brightness_4
+// CPP program to print Fizz Buzz     
   
     } 
   
