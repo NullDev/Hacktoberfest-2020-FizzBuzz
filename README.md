@@ -53,6 +53,16 @@ Read more about it here: https://www.tomdalling.com/blog/software-design/fizzbuz
 
 <hr>
 
+## :trophy: Top 5 personal favorites:
+
+1. [Fizz Buzz As Compiler Error (C++)](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/blob/master/C%2B%2B/FizzBuzzAsCompilerError.cpp) by [@Braintelligence](https://github.com/Braintelligence)
+2. [Overly complicated FizzBuzz solution (Python)](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/blob/master/Python/FizzBuzz-2.py) by [@InitialPosition](https://github.com/InitialPosition)
+3. [Hardcoded FizzBuzz (Python)](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/blob/master/Python/FizzBuzz-HardCoded.py) by [@khong612](https://github.com/khong612)
+4. [FizzBuzz in CharArrays, Bytes and Hex Values (Java)](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/blob/master/Java/FizzBuzz-Main.java) by [@nimbl0](https://github.com/nimbl0)
+5. [FizzBuzz in ArnoldC](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/blob/master/ArnoldC/Fizzbuzz.arnoldc) by [@adamsoutar](https://github.com/adamsoutar)
+
+<hr>
+
 ## :question: What do you mean by "creative" solutions?
 
 Well, I'm not looking for normal solutions. You know, the ones you'd find in a book or so. I'm looking for something interesting! Whether that's a fancy one-liner in the language of your choice, or perhaps a funny [eso-language](https://en.wikipedia.org/wiki/Esoteric_programming_language), or maybe an intentionally weird solution that you don't even quite understand yourself (be sure to document those!). Anyhow, the goal is to have fun and maybe even learn a thing or two. 
