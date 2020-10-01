@@ -1,4 +1,4 @@
-// simple fizzbuzz using while loop in typscript
+// simple fizzbuzz using while loop in typescript
 // Author: @dimaswijanarko
 
 function fizzBuzz(a: number) {
