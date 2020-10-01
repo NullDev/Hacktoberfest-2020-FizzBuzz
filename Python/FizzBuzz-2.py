@@ -20,7 +20,7 @@ def prime_factorization(number: int):
             # if still flagged, append number to factor array
             if prime:
                 prime_factors.append(x)
-
+        #prime_factors return statment
     return prime_factors
 
 
