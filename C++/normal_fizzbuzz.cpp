@@ -1,3 +1,6 @@
+//Normal Fizzbuzz solution in C++
+//author: blackfly19
+
 #include<bits/stdc++.h>
 using namespace std;
 
