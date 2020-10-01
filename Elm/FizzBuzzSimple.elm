@@ -1,3 +1,5 @@
+-- Simple Elm FizzBuzz implementation
+-- Author: @veotani
 import Html exposing (text)
 
 
