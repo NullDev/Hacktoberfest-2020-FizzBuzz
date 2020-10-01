@@ -1,0 +1,71 @@
+--author:@nchiarappa
+
+\newif\ifisfizzbuzz
+\newif\ifisfizz
+\newif\ifisbuzz
+
+\isfizzbuzzfalse
+\isfizzfalse
+\isbuzzfalse
+
+\def\isthisfizzbuzz #1 {
+    \count234 = #1
+    \loop
+        \ifnum\count234 > 0
+        \advance\count234 by -15
+    \repeat
+
+    \ifnum\count234 = 0
+        \isfizzbuzztrue
+    \fi
+}
+
+\def\isthisfizz #1 {
+    \count234 = #1
+    \loop
+        \ifnum\count234 > 0
+        \advance\count234 by -3
+    \repeat
+
+    \ifnum\count234 = 0
+        \isfizztrue
+    \fi
+}
+
+\def\isthisbuzz #1 {
+    \count234 = #1
+    \loop
+        \ifnum\count234 > 0
+        \advance\count234 by -5
+    \repeat
+
+    \ifnum\count234 = 0
+        \isbuzztrue
+    \fi
+}
+
+\count255 = 1
+\loop
+    {
+        \isthisfizzbuzz\count255
+        \isthisfizz\count255
+        \isthisbuzz\count255
+        \ifisfizzbuzz
+            FizzBuzz
+        \else
+            \ifisfizz
+                Fizz
+            \else
+                \ifisbuzz
+                    Buzz
+                \else
+                    \the\count255
+                \fi
+            \fi
+        \fi
+    }
+    \ifnum\count255 < 100
+    \advance\count255 by 1
+\repeat
+
+\end

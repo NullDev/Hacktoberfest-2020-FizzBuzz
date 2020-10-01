@@ -18,7 +18,7 @@ https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/issues/3
 
 **Note:** <br>
 We can't accept every PR and label invalid one's accordingly. Examples are off-topic contributions as well as duplicated solutions. <br>
-This repository aligns with the values of the Hacktoberfest as it is a platform to learn (experiment with different solutions, learning how GitHub & PR's work, challanging yourself to come up with creative solutions to a unique problem). 
+This repository aligns with [the values of the Hacktoberfest](https://hacktoberfest.digitalocean.com/details) as it is a platform to learn (experiment with different solutions, learning how GitHub & PR's work, challanging yourself to come up with creative solutions to a unique problem). Denied PR's can be found [here](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/issues?q=label%3Ainvalid+is%3Aclosed).
 
 <hr>
 
@@ -39,7 +39,8 @@ This repository aligns with the values of the Hacktoberfest as it is a platform 
 ...
 ```
 
-A sample file can be found here: https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/blob/master/JavaScript/one-liner.js
+A sample file can be found here: https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/blob/master/JavaScript/one-liner.js <br>
+Or check out our [top 5 user contributed samples](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz#trophy-top-5-personal-favorites) :) 
 
 <hr>
 
@@ -53,9 +54,21 @@ Read more about it here: https://www.tomdalling.com/blog/software-design/fizzbuz
 
 <hr>
 
+## :trophy: Top 5 personal favorites:
+
+1. [Fizz Buzz As Compiler Error (C++)](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/blob/master/C%2B%2B/FizzBuzzAsCompilerError.cpp) by [@Braintelligence](https://github.com/Braintelligence)
+2. [First and only FizzBuzz implementation in "omgrofl"](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/blob/master/Omgrofl/FizzBuzz.omgrofl) by [@adamsoutar](https://github.com/adamsoutar) - [See PR](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/pull/205) for more information!
+3. [Overly complicated FizzBuzz solution (Python)](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/blob/master/Python/FizzBuzz-2.py) by [@InitialPosition](https://github.com/InitialPosition)
+4. [Hardcoded FizzBuzz (Python)](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/blob/master/Python/FizzBuzz-HardCoded.py) by [@khong612](https://github.com/khong612)
+5. [FizzBuzz in CharArrays, Bytes and Hex Values (Java)](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/blob/master/Java/FizzBuzz-Main.java) by [@nimbl0](https://github.com/nimbl0)
+
+<hr>
+
 ## :question: What do you mean by "creative" solutions?
 
 Well, I'm not looking for normal solutions. You know, the ones you'd find in a book or so. I'm looking for something interesting! Whether that's a fancy one-liner in the language of your choice, or perhaps a funny [eso-language](https://en.wikipedia.org/wiki/Esoteric_programming_language), or maybe an intentionally weird solution that you don't even quite understand yourself (be sure to document those!). Anyhow, the goal is to have fun and maybe even learn a thing or two. 
+
+If you're still unsure, check out our [top 5 user contributed samples](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz#trophy-top-5-personal-favorites) :) 
 
 **Happy hacking!**
 
