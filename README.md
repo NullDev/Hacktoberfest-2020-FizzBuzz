@@ -39,7 +39,8 @@ This repository aligns with [the values of the Hacktoberfest](https://hacktoberf
 ...
 ```
 
-A sample file can be found here: https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/blob/master/JavaScript/one-liner.js
+A sample file can be found here: https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/blob/master/JavaScript/one-liner.js <br>
+Or check out our [top 5 user contributed samples](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz#trophy-top-5-personal-favorites) :) 
 
 <hr>
 
@@ -66,6 +67,8 @@ Read more about it here: https://www.tomdalling.com/blog/software-design/fizzbuz
 ## :question: What do you mean by "creative" solutions?
 
 Well, I'm not looking for normal solutions. You know, the ones you'd find in a book or so. I'm looking for something interesting! Whether that's a fancy one-liner in the language of your choice, or perhaps a funny [eso-language](https://en.wikipedia.org/wiki/Esoteric_programming_language), or maybe an intentionally weird solution that you don't even quite understand yourself (be sure to document those!). Anyhow, the goal is to have fun and maybe even learn a thing or two. 
+
+If you're still unsure, check out our [top 5 user contributed samples](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz#trophy-top-5-personal-favorites) :) 
 
 **Happy hacking!**
 
