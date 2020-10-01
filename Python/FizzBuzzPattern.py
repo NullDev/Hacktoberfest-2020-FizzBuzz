@@ -1,3 +1,6 @@
+#A simple Fizz Buzz Pattern Code
+#Author @Audarya07
+
 class FizzBuzz:
 
 	def __init__(self, start, end):
