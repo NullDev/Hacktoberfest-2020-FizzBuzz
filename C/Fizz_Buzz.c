@@ -1,3 +1,5 @@
+// a fizz buzz in c (first thing I though would work :) )
+// Author: @stanmondesir
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
