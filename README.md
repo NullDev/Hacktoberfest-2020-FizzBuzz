@@ -18,7 +18,7 @@ https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/issues/3
 
 **Note:** <br>
 We can't accept every PR and label invalid one's accordingly. Examples are off-topic contributions as well as duplicated solutions. <br>
-This repository aligns with [the values of the Hacktoberfest](https://hacktoberfest.digitalocean.com/details) as it is a platform to learn (experiment with different solutions, learning how GitHub & PR's work, challanging yourself to come up with creative solutions to a unique problem). 
+This repository aligns with [the values of the Hacktoberfest](https://hacktoberfest.digitalocean.com/details) as it is a platform to learn (experiment with different solutions, learning how GitHub & PR's work, challanging yourself to come up with creative solutions to a unique problem). Denied PR's can be found [here](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/issues?q=label%3Ainvalid+is%3Aclosed).
 
 <hr>
 
