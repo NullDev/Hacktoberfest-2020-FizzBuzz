@@ -1,0 +1,16 @@
+REM Project FizzBuzz
+CLS
+FOR I = 1 TO 100 STEP 1
+    LET X = I MOD 3
+    LET Y = I MOD 5
+    IF X = 0 AND Y = 0 THEN
+        PRINT "FizzBuzz"
+    ELSEIF X = 0 THEN
+        PRINT "Fizz"
+    ELSEIF Y = 0 THEN
+        PRINT "Buzz"
+    ELSE
+        PRINT I
+    END IF
+NEXT
+END
