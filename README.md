@@ -16,6 +16,12 @@ https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/issues/3
 
 <hr>
 
+**Note:** <br>
+We can't accept every PR and label invalid one's accordingly. Examples are off-topic contributions as well as duplicated solutions. <br>
+This repository aligns with the values of the Hacktoberfest as it is a platform to learn (experiment with different solutions, learning how GitHub & PR's work, challanging yourself to come up with creative solutions to a unique problem). 
+
+<hr>
+
 ## :wrench: Steps to add your solution:
 
 1. [Fork](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/fork) this repository.
