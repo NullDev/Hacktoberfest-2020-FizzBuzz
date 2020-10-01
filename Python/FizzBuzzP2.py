@@ -1,5 +1,5 @@
-// Another method for creating FizzBuzz
-// MishManners
+# Another method for creating FizzBuzz
+# MishManners
 
 import sys
 
