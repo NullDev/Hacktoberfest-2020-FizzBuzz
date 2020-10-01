@@ -15,3 +15,4 @@ while True:
 		print(n)
 	if n == 100:
 		break
+		
