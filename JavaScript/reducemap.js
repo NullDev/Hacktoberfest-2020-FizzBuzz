@@ -1,4 +1,5 @@
 // Another way of writing fizzBuzz using javascript basic array methods(map, reduce)
+// Author: @hwennnn
 
 // Notes:
 // The map() method creates a new array populated with the results of calling a provided function on every element in the calling array.
