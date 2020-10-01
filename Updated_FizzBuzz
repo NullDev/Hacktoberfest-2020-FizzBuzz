@@ -1,0 +1,16 @@
+# Author : Utsav Ramchandra Khatu
+# Updated FizzBuzz
+"""People are bored with the old FizzBuzz So they wanted to back a new one
+In New one Fizz appears at multiple of 7 and Buzz at multiple of 10 and FizzBuzz at multiple of 70"""
+
+n = int(input())
+if n%7 == 0 :
+    if n%10 == 0 :
+        print("FizzBuzz")
+    else :
+        print("Fizz")
+else :
+    if n%10 == 0 :
+        print("Buzz")
+    else :
+        print(n)
