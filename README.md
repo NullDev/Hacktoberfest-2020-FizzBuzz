@@ -30,7 +30,7 @@ This repository aligns with the values of the Hacktoberfest as it is a platform 
 
 3. Name your file with a fitting description. 
 
-4. Comment the first lines of your file (if possible) like that:
+4. Comment the first lines of your file (if possible) like that (use whatever commenting syntax is supported by the language you use!):
 
 ```js
 // [SHORT DESCRIPTION HERE]
