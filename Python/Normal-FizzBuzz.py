@@ -1,5 +1,5 @@
 #A simple Python code to implement FizzBuzz
-#Author @pranay-ar
+#Author @Aayush-hub
 
 for fizzbuzz in range(101):
     if fizzbuzz % 3 == 0 and fizzbuzz % 5 == 0:
