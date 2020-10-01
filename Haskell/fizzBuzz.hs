@@ -1,3 +1,4 @@
+--author : @mainak-debnath
 module Main where
 main :: IO ()
 main = printAll $ map fizzBuzz [1..100]
