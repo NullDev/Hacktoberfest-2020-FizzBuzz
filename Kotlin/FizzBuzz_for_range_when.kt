@@ -1,3 +1,6 @@
+// Basic FizzBuzz using Kotlin "Range" and "when" control flow 
+// Author: @mohitDeshpande
+
 fun main() {
   for (i in 1..100) {
     val fizz = i % 3 == 0
