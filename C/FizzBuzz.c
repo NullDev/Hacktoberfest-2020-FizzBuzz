@@ -1,5 +1,7 @@
-#include <stdio.h>
+//FizzBuzz in C
+//Author: Siddhant Mittal(siddhantmittal024)
 
+#include <stdio.h>
 int main(void)
 {
     int i = 1;
