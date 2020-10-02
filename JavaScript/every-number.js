@@ -43,9 +43,11 @@ function generateFactorWords(upTo, fizzbuzz) {
 
     if (fizzbuzz) {
       if (words.size === 3 - 2) {
-        words.add('Fizz');
+        if (words.has('Fizz')) words.remove('Fizz');
+        else words.add('Fizz');
       } else if (words.size === 5 - 2) {
-        words.add('Buzz');
+        if (words.has('Buzz')) words.remove('Buzz');
+        else words.add('Buzz');
       }
     }
   }
@@ -66,14 +68,14 @@ function findFactors(num) {
 
   factors.add(num);
 
-  return factors;
+  return [...factors];
 }
 
 function fizzBuzz(words) {
   console.log(1);
 
   for (let i = 2; i < words.length + 2; i++) {
-    let factors = [...findFactors(i)];
+    let factors = findFactors(i);
     let wordList = factors.map((value) => words[value - 2]);
     console.log(wordList.join(''));
   }
