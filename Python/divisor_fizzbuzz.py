@@ -1,0 +1,1 @@
+a,b = [int(input("Enter a number : ")) for _ in range(2)];[print(x,''.join(["Fizz" if x %a==0 else "","Buzz" if x%b==0 else ""])) for x in range(1,1000) if x%a==0 or x%b==0]
