@@ -56,7 +56,7 @@ Read more about it here: https://www.tomdalling.com/blog/software-design/fizzbuz
 
 ## :trophy: Top 5 personal favorites:
 
-1. [Fizz Buzz As Compiler Error (C++)](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/blob/master/C%2B%2B/FizzBuzzAsCompilerError.cpp) by [@Braintelligence](https://github.com/Braintelligence)
+1. [Fizz Buzz As Compiler Error (C++)](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/blob/master/C%2B%2B/FizzBuzzAsCompilerError.cpp) by [Adam Tornhill](https://www.adamtornhill.com/articles/fizzbuzz.htm)
 2. [First and only FizzBuzz implementation in "omgrofl"](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/blob/master/Omgrofl/FizzBuzz.omgrofl) by [@adamsoutar](https://github.com/adamsoutar) - [See PR](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/pull/205) for more information!
 3. [Overly complicated FizzBuzz solution (Python)](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/blob/master/Python/FizzBuzz-2.py) by [@InitialPosition](https://github.com/InitialPosition)
 4. [Hardcoded FizzBuzz (Python)](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/blob/master/Python/FizzBuzz-HardCoded.py) by [@khong612](https://github.com/khong612)
