@@ -50,7 +50,7 @@ Quick summary:
 
 > FizzBuzz is a program that prints the numbers from 1 to 100. But for multiples of three it prints “Fizz” instead of the number and for the multiples of five, it prints “Buzz”. For numbers which are multiples of both three and five it prints “FizzBuzz”.
 
-![FizzBuzz](https://64.media.tumblr.com/098171eb6557f68cae65fdffe485abc4/tumblr_onha88HP0a1w0dccho1_1280.gif =250x)<br>
+<img src="https://64.media.tumblr.com/098171eb6557f68cae65fdffe485abc4/tumblr_onha88HP0a1w0dccho1_1280.gif" width=300><br>
 [source: https://100daysofalgorithms.tumblr.com/post/158891499866/day-86-ode-to-fizzbuzz-fizzbuzz-is-the-simplest]
 
 Read more about it here: https://www.tomdalling.com/blog/software-design/fizzbuzz-in-too-much-detail/
