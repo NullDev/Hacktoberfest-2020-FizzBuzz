@@ -1,3 +1,5 @@
+# Author: @GauravPoosarla
+
 defmodule FizzBuzz do
 	def perform_count(total_count) when total_count >= 0 do
 		total_count
