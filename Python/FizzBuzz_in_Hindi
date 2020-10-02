@@ -1,0 +1,5 @@
+for number in range(101):
+    if number % 3 == 0:
+        print("फ़िज़बज़" if number % 5 == 0 else "फ़िज़")
+        continue
+    print("बज़" if number % 5 == 0 else number)
