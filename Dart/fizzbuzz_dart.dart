@@ -1,5 +1,5 @@
-bool res(i, j){
-  return i%j==0;
+bool res(a, b){
+  return a%b==0;
 }
 void main() {
   for(int i=1;i<=100;i++){
