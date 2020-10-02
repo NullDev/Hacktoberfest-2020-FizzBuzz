@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  background-color: #0c0c0c;
+}
+
+#heading {
+  margin: 3% 0;
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+span {
+  padding-right: 10%;
+  font-family: 'Lora', serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+#number {
+  margin: 1% 30px;
+  padding: 3px 8.61px;
+  width: 15%;
+}
+
+#submit {
+  padding: 10.25px 17.95px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 17px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  border-radius: 15px;
+  background-color: #345be3;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.result {
+  margin: 1%;
+  color: #f3f3f3;
+  font-size: 3em;
+}
+
+@media screen and (max-width: 375px) {
+  #number {
+    width: 80%;
+  }
+  .result {
+    margin: 5%;
+    font-size: 2em;
+  }
+  #submit {
+    margin: 5%;
+  }
+}

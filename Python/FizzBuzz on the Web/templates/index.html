@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<article>
+  <main>
+    <h1 id="heading">Lets Fizz and Buzz!!</h1>
+    <form action="/" method="GET">
+      <span>Your Number:</span> <br>
+      <input type="number" name="number" id="number" placeholder="eg. 4, 7, 15"><br>
+      <input type="submit" id="submit" value="Is it Fizz or Buzz?">
+    </form>
+    {% if num == "" %}
+    <h2 class="result"></h2>
+    {% elif num and num == "Fizz" or num == "Buzz" or num == "FizzBuzz" %}
+    <h2 class="result">{{ num }}!!</h2>
+    {% elif num and num != "Fizz" or num != "Buzz" or num != "FizzBuzz" %}
+    <h2 class="result">{{ num }} cannot Fizz or Buzz 😥</h2>
+    {% endif %}
+  </main>
+</article>
+{% endblock %}
