@@ -7,7 +7,7 @@ def reverse_fizz_buzz(s):
     if not s:
         return [""]
     combos = []
-    
+
     child_combos = reverse_fizz_buzz(s[4:])
     for child in child_combos:
         if s[:4] == 'fizz':
@@ -23,4 +23,5 @@ def reverse_fizz_buzz(s):
 
 combos = reverse_fizz_buzz("fizzbuzzfizzbuzzbuzzfizz")
 print(combos)
+# ['3,5,3,5,5,3,', '3,5,15,5,3,', '15,3,5,5,3,', '15,15,5,3,']
         
