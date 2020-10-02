@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+void fizzBuzz(int n);
+
+int main(void)
+{
+  fizzBuzz(100);
+}
+
+void fizzBuzz(int n)
+{
+  if (n == 0)
+    return;
+
+  fizzBuzz(n-1);
+
+  int f, b;
+
+  if (!(f = n%3))
+    printf("Fizz");
+  if (!(b = n%5))
+    printf("Buzz");
+  if (f && b)
+    printf("%i", n);
+  printf("\n");
+}
