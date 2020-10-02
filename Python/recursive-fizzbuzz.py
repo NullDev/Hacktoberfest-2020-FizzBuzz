@@ -1,3 +1,6 @@
+# Recursive FizzBuzz without loops
+# author : karn21
+
 def fizzbuzz(n):
 	if n == 101:
 		return
