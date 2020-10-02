@@ -1,4 +1,4 @@
-// A verilog programming approach to Fizz-Bizz familiar problem in electronics language.
+// A VHDL programming approach to Fizz-Bizz familiar problem in electronics language.
 // Author: @parmar532
 
 entity fizzbuzz is
