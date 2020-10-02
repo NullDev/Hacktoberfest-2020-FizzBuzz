@@ -3,7 +3,7 @@ Prints numbers from 1-100 AND
 Prints fizz is the number is divisble by 3 and/or includes a 3
 Prints buzz if the number is divisble by 5 and/or contains a 5
 Prints fizzbuzz is the number meets both of those conditions
-Solution has a lot of flags and nested if statements, I thought this would be a unique solution with a twist to the "normal" fizzbuzz using C++. 
+Solution has a lot of flags and if statements, I thought this would be a unique solution with a twist to the "normal" fizzbuzz using C++. 
 Author: @yashgajaria
 */ 
 
