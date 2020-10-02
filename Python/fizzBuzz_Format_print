@@ -1,0 +1,17 @@
+def fizz_buzz_printing(s, e):
+    if s == e:
+        return
+    else:
+        s += 1
+        if s % 3 == 0 and s % 5 == 0:
+            print(f"FizzBuzz")
+        elif s % 3 == 0:
+            print(f"Fizz")
+        elif s % 5 == 0:
+            print(f"Buzz")
+        else:
+            print(f"{s}")  # used f to print variable
+    print_fizz_nums(s, e)
+
+
+fizz_buzz_printing(0, 100)
