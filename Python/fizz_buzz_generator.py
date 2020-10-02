@@ -8,6 +8,7 @@ author: @moltenmuffins
 
 import argparse
 
+
 class FizzBuzzGenerator:
     """
     A FizzBuzz generator class
@@ -22,8 +23,6 @@ class FizzBuzzGenerator:
     """
 
     def __init__(self, triggers=None):
-        """
-        """
         if triggers is None:
             self.triggers = [
                 (3, "Fizz"),
@@ -39,6 +38,7 @@ class FizzBuzzGenerator:
     def __next__(self):
         self.__count += 1
         i = self.__count
+
         value = ""
         # Run checks for each trigger
         for (multiple, word) in self.triggers:
