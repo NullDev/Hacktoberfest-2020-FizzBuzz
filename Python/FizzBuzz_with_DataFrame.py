@@ -1,7 +1,6 @@
 // FizzBuzz with DataFrame
 // @MuhamadAzizi
 
-```Python
 import pandas as pd
 import numpy as np
 
@@ -22,4 +21,3 @@ for i in df['Number']:
 pd.set_option('display.max_rows', None)
 
 print(df)
-```
