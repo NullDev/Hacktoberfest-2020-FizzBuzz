@@ -1,6 +1,7 @@
 # A python fizz-buzz implementation that outputs in ascii art
 # Author: @jonot-cyber
 
+#The ascii art that is used
 ascii = """
 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
@@ -20,6 +21,7 @@ ascii = """
 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 """
 
+#This segment actually generates the fizzbuzz. Its pretty standard
 output = str()
 
 for x in range(387):
@@ -33,6 +35,7 @@ for x in range(387):
         result = str(x)
     output += result
 
+#This is where it maps the string to the ascii art
 fizz_buzz_index = 0
 
 new_ascii = ""
@@ -46,4 +49,5 @@ for char in ascii:
     else:
         new_ascii += char
 
+#And here it outputs the data
 print(new_ascii)
