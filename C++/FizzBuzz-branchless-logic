@@ -1,4 +1,5 @@
-// FizzBuzz without branches
+// FizzBuzz without branches in the logic
+// stl functions may use comparisons
 // Author: @s0la1337
 
 #include <iostream>
