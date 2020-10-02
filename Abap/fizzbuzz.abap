@@ -1,9 +1,9 @@
 *&---------------------------------------------------------------------*
-*& Report FIZZBUZZ
+*& Report FIZZBUZZ_HACKTOBERFEST
 *&---------------------------------------------------------------------*
 *&
 *&---------------------------------------------------------------------*
-report fizzbuzz.
+report fizzbuzz_hacktoberfest.
 
 parameters: fizzbuzz type i.
 data count type i value 1.
