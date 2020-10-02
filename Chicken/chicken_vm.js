@@ -1,3 +1,26 @@
+/**
+ * This class contains several items to compile and run code for the chicken programming language:
+ * - First there is the reference implementation for chicken.
+ *   This function is highly unreadable and is very recursive.
+ *   Due to the large amount of instructions executed for the fizzbuzz program, this function results in a maximum call stack size exceeded error.
+ *
+ * - Next it contains the class ChickenVM.
+ *   This is a more efficient (and way more readable) implementation for the chicken programming language.
+ *   This class requires an list of opcodes and an input string as constructor parameter.
+ *   You can then call the function `execute` on the created instance of the vm to obtain the result of the code.
+ *
+ * - The next two things are the compile and decompile functions.
+ *   As the names quite obviously state, these function are used to compile and decompile chicken.
+ *   The compile function accepts a string and returns a list of opcodes (if the string was valid chicken).
+ *   The decompile function accepts a list of opcodes and returns the corresponding chicken code.
+ *
+ * - The last function in this file 'runChicken' is a small helper function.
+ *   The function accepts a chicken string together with an input string.
+ *   It then compiles the chicken, creates a VM instance with the compiled chicken and the provided input.
+ *   Finally it returns the result of the executed chicken.
+ */
+
+
 const REGISTERS = {
     SELF: 0,
     INPUT: 1,
@@ -135,7 +158,7 @@ function compile(code) {
     })
 }
 
-function runChicken(chickenString) {
-    const vm = new ChickenVM(compile(chickenString), '(unused)');
+function runChicken(chickenString, input) {
+    const vm = new ChickenVM(compile(chickenString), input);
     return vm.execute().trim();
 }
