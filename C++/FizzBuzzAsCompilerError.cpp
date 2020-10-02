@@ -1,5 +1,6 @@
 /*
    This code will never compile. Instead it will output FizzBuzz as a compiler error.
+   Author: Adam Tornhill - https://www.adamtornhill.com/articles/fizzbuzz.htm
 */
 
 #include <iostream>
