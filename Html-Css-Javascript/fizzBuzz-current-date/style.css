@@ -1,0 +1,20 @@
+body {
+   color: #ffffff;
+   background-color: #22272C;
+}
+
+.container {
+   text-align: center;
+   margin-top: 200px;
+}
+
+#clock {
+   font-size: 70px;
+   text-shadow: 10px 10px rgba(0, 0, 0, 0.4);
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#fizzBuzz {
+   font-size: 40px;
+   font-family: Arial, Helvetica, sans-serif;
+}
