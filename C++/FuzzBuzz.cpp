@@ -8,7 +8,7 @@
 using namespace std;
 
 int main() {
-    std::cout << "Fizz buzz" << std::endl;
+    cout << "Fizz buzz" << endl;
 
     auto print = []( int v ) {
         auto f = !(v % 3);
@@ -18,9 +18,9 @@ int main() {
                        b ? "buzz" : to_string( v )) << endl;
     };
 
-    std::array<int,100> tab;
+    array<int,100> tab;
 
-    std::iota ( tab.begin(), tab.end(), 1 );
+    iota ( tab.begin(), tab.end(), 1 );
 
-    std::for_each ( tab.begin(), tab.end(), print );
+    for_each ( tab.begin(), tab.end(), print );
 }
