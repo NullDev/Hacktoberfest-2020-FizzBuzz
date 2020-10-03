@@ -1,0 +1,23 @@
+# I love Magik!
+# https://helloacm.com/the-fizzbuzz-example-in-magik-programming-language/
+# Magik is a programming language owned by GE Smallworld
+
+_package sw;
+$
+
+_block
+    _for i _over range(1, 100)
+    _loop
+        _local div3? << i _mod 3 = 0
+        _local div5? << i _mod 5 = 0
+        _if div3? _andif div5? _then
+            write("FizzBuzz")
+        _elif div3? _then
+            write("Fizz")
+        _elif div5? _then
+            write("Buzz")
+        _else
+            write(i)
+        _endif
+    _endloop
+_endblock
