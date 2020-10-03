@@ -1,4 +1,4 @@
-// A script/program that solves FizzBuzz
+// A script/program that solves FizzBuzz without using an if, if else, or else statement
 // This program has a runtime of O(n) or linear (i think)
 // Author: @StephenTrainor
 
