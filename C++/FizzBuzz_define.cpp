@@ -1,3 +1,4 @@
+// C++ #define compiler statements makes it possible to create this beauty!
 // Author: @alvesvaren
 
 #include <iostream>
