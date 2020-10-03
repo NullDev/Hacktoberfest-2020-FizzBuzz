@@ -1,39 +1,8 @@
-# Author: @GauravPoosarla
-
-defmodule FizzBuzz do
-	def perform_count(total_count) when total_count >= 0 do
-		total_count
-		|> count()
-		|> Enum.reverse()
-		|> print()
-	end
-	
-	defp count(0) do
-		[]
-	end
-	
-	defp count(count) when rem(count, 3) == 0 and rem(count, 5) == 0 do
-		["fizzbuzz" | count(count - 1)]
-	end
-	
-	defp count(count) when rem(count, 3) == 0 do
-		["fizz" | count(count - 1)]
-	end
-	
-	defp count(count) when rem(count, 5) == 0 do
-		["buzz" | count(count - 1)]
-	end
-	
-	defp count(count) do
-		[Integer.to_string(count) | count(count - 1)]
-	end
-
-	defp print([]) do
-	end
-	
-	defp print([head | tail]) do
-		IO.puts(head)
-		
-		print(tail)
-	end	
-end
+1..100
+|> Enum.map(fn
+  n when rem(n, 3) == 0 and rem(n, 5) == 0 -> "FizzBuzz"
+  n when rem(n, 3) == 0 -> "Fizz"
+  n when rem(n, 5) == 0 -> "Buzz"
+  n -> Integer.to_string(n)
+end)
+|> Enum.each(&IO.puts/1)
