@@ -1,0 +1,4 @@
+//obfuscated js code for fizzbuzz, it provides a tamper proof oneline code which is smaller and cannot be easily decoded
+//This is a simple loop that iterates through 1 to 100 and checks the condition
+// Author: @rootnarayan
+const _0x36f1 = ['log', 'Buzz', 'Fizz']; (function (_0x27ff12, _0x36f17d) { const _0x39f130 = function (_0xe301b6) { while (--_0xe301b6) { _0x27ff12['push'](_0x27ff12['shift']()); } }; _0x39f130(++_0x36f17d); }(_0x36f1, 0x101)); const _0x39f1 = function (_0x27ff12, _0x36f17d) { _0x27ff12 = _0x27ff12 - 0x0; let _0x39f130 = _0x36f1[_0x27ff12]; return _0x39f130; }; const _0x48083d = _0x39f1; for (let i = 0x0; i < 0x64; i++)console[_0x48083d('0x1')]((i % 0x3 ? '' : _0x48083d('0x0')) + (i % 0x5 ? '' : _0x48083d('0x2')) || i);
