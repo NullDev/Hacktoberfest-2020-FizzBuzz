@@ -1,5 +1,5 @@
 -- A fizzbuzz module. Usage: `fb = require 'fizzbuzz4'; fb:run()` optional counter limits :run(x,y) 
--- Author: @darrencearnaigh
+-- Author: @darrenkearney
 
 local fizzbuzz = {}
 
