@@ -1,4 +1,10 @@
-;Wait for pressing Space after starting the Script
+; A FizzBuzz in Autohotkey
+; The FizzBuzz prints the output as keystrokes 
+; Autor: @Feluin
+
+
+
+;  Wait for pressing Space after starting the Script
 KeyWait, Space, D 
 
 ;The classical Fizzbuzz
