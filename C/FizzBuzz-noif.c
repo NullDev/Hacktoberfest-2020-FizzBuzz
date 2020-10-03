@@ -5,18 +5,34 @@
 #include <stdio.h>
 
 int main(void) {
-    int iterations;
+    double iterations;
+    int fizz_case;
+    int buzz_case;
+    int random_variable;
     printf("Enter number to go up to: ");
-    scanf("%d", &iterations);
+    scanf("%lf", &iterations);
     for (int i = 1; i < iterations; i++) {
-        if (i % 3 == 0) {
-            printf("Fizz");
+        random_variable = 0;
+        fizz_case = i % 3;
+        buzz_case = i % 5;
+        switch(fizz_case) {
+            case 0: {
+                printf("Fizz");
+                random_variable++;
+                break;
+            }
         }
-        if (i % 5 == 0) {
-            printf("Buzz");
+        switch(buzz_case) {
+            case 0: {
+                printf("Buzz");
+                random_variable++;
+                break;
+            }
         }
-        if ((i % 5 != 0) && (i % 3 != 0)) {
-            printf("%i", i);
+        switch(random_variable) {
+            case 0: {
+                printf("%i", i);
+            }
         }
         printf("\n");
     }
