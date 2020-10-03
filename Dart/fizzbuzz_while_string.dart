@@ -2,7 +2,6 @@
 // Author: @acaa06
 
 void main() {
-  var output = '';
   var fizz='fizz',buzz='buzz',fizzbuzz='fizzbuzz';
   int i=1;
   while(i<=100) {
