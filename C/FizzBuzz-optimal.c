@@ -1,6 +1,5 @@
-// Not the most concise or memory efficient Fizz Buzz variant, but is easy to add more conditions such as (i % 4 == 0)
-// FizzBuzz usually only prints out the first 100 numbers, but if you want more or less you have the option to.
-// This program has a runtime of O(n) or linear because the time to run increases with the number of iterations linearly
+// A script/program that solves FizzBuzz
+// This program has a runtime of O(n) or linear (i think)
 // Author: @StephenTrainor
 
 #include <stdio.h>
