@@ -16,7 +16,7 @@ https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/issues/3
 
 <hr>
 
-# READ BEFORE CONTRIBUTING
+# :exclamation: READ BEFORE CONTRIBUTING
 **THIS REPOSITORY IS IN COMPLIENCE WITH THE HACKTOBERFEST VALUES AND RULES:** <br>
 We cannot accept every PR and label invalid one's accordingly! Examples are off-topic contributions, duplicated solutions, copy-paste solutions as well as obvious +1 attempts. <br>
 We are searching for **interesting/creative/abstract/unique/extraordinary/weird** solutions to FizzBuzz. Only one _normal_ solution per language is permitted! <br>
