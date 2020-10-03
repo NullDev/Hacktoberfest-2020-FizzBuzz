@@ -1,4 +1,5 @@
-#Go Euler or Go Home
+# Go Euler or Go Home
+# Author: @godspeed5
 
 import numpy as np
 for i in range(1,101):
