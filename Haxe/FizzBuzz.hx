@@ -1,3 +1,5 @@
+// This is FizzBuzz in Haxe
+// Haxe is a bit of a legend in game development. Doesn't see much use, syntax is just OK, but it's really amazing because the compiler transpiles to a wide variety of targets
 class FizzBuzz {
     static function main() {
         for (i in (1...100)) {
