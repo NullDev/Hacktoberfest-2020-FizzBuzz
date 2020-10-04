@@ -63,12 +63,15 @@ Read more about it here: https://www.tomdalling.com/blog/software-design/fizzbuz
 <hr>
 
 ## :trophy: Top 5 personal favorites:
+<sub>Side note: There are more than 5 solutions now but I don't want to change the title here because that would break a lot of links and references to it :)</sub>
 
 1. [First and only FizzBuzz implementation in "omgrofl"](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/blob/master/Omgrofl/FizzBuzz.omgrofl) by [@adamsoutar](https://github.com/adamsoutar) - [See PR](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/pull/205) for more information!
 2. [FizzBuzz with Branchless logic (C++)](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/blob/master/C%2B%2B/FizzBuzz-branchless-logic.cpp) by [@s0LA1337](https://github.com/s0LA1337)
-3. [Overly complicated FizzBuzz solution (Python)](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/blob/master/Python/FizzBuzz-2.py) by [@InitialPosition](https://github.com/InitialPosition)
-4. [Hardcoded FizzBuzz (Python)](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/blob/master/Python/FizzBuzz-HardCoded.py) by [@khong612](https://github.com/khong612)
-5. [FizzBuzz in CharArrays, Bytes and Hex Values (Java)](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/blob/master/Java/FizzBuzz-Main.java) by [@nimbl0](https://github.com/nimbl0)
+3. [Hand written solution in WebAssembly (WASM)](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/blob/master/Wasm/fizzbuzz.wat) by [@nlordell](https://github.com/nlordell) - [See PR](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/pull/492) for more information!
+4. [Type-Level FizzBuzz solution (TypeScript)](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/blob/master/TypeScript/typelevel-fizzbuzz.ts) by [@minajevs](https://github.com/minajevs) - [See PR](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/pull/501) for more information!
+5. [Overly complicated FizzBuzz solution (Python)](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/blob/master/Python/FizzBuzz-2.py) by [@InitialPosition](https://github.com/InitialPosition)
+6. [Hardcoded FizzBuzz (Python)](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/blob/master/Python/FizzBuzz-HardCoded.py) by [@khong612](https://github.com/khong612)
+7. [FizzBuzz in CharArrays, Bytes and Hex Values (Java)](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/blob/master/Java/FizzBuzz-Main.java) by [@nimbl0](https://github.com/nimbl0)
 
 <hr>
 
