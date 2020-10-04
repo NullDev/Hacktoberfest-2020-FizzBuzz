@@ -17,7 +17,7 @@ fn main() {
                 0 => "FizzBuzz",
                 _ => "Fizz"
             }.to_string();
-            offset+=3;
+            offset += 3;
         }
     });
 
