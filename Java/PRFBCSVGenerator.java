@@ -8,8 +8,11 @@ import java.nio.file.Path;
 import java.util.Random;
 
 public class PRFBCSVGenerator {
-    final static long SEED = 694206942069420L;
-    final static Path PATH_TO_CSV = FileSystems.getDefault().getPath("fizzBuzz.csv");
+    static final long SEED = 694206942069420L;
+    static final Path PATH_TO_CSV = FileSystems.getDefault().getPath("fizzBuzz.csv");
+
+    private PRFBCSVGenerator() {
+    }
 
     public static void generateCSV() throws IOException {
         Random gen = new Random(SEED);
@@ -30,5 +33,16 @@ public class PRFBCSVGenerator {
         }
 
         Files.writeString(PATH_TO_CSV, builder);
+        System.out.println("CSV file generated and stored in:");
+        System.out.println(PATH_TO_CSV.toAbsolutePath().toString());
+        System.out.println("Now run `java PseudoRandomFizzBuzz.java` again.");
+    }
+
+    public static void main(String[] args) {
+        try {
+            generateCSV();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
