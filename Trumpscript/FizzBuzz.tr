@@ -1,0 +1,41 @@
+trump is 1000000
+zero is, 1000000 minus 1000000;
+
+as long as, trump fewer 100000000; do:
+    earth is trump
+    as long as, not earth fewer 3000000; do:
+        earth is, earth minus 3000000;
+    !
+
+    her is trump
+    as long as, not her fewer 5000000; do:
+        her is, her minus 5000000;
+    !
+
+    soul is trump
+    as long as, not soul fewer 15000000; do:
+        soul is, soul minus 15000000;
+    !
+
+    if, soul is zero?; do:
+        say "FizzBuzz"
+    !
+    else do:
+        if, earth is zero?; do:
+            say "Fizz"
+        !
+        if, her is zero?; do:
+            say "Buzz"
+        !
+    !
+
+    if, not earth is zero?; do:
+        if, not her is zero?; do:
+            say trump
+        !
+    !
+
+    trump is, trump plus 1000000;
+!
+
+America is great.
