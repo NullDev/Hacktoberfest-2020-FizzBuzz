@@ -36,3 +36,21 @@
     font-size: 5rem;
     font-weight: 400;
 }
+@media screen and (min-width:572px){
+    .box{
+        width: 500px;
+        height: 200px;
+    }
+    .box img{
+        width: 150px;
+        height: 150px;
+    }
+    .boomer{
+        width: 500px;
+        height: 200px;
+    }
+    .boomer-title{
+        line-height: 200px;
+        font-size: 7rem;
+    }
+}
