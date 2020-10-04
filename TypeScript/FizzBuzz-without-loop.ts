@@ -3,8 +3,8 @@
 
 class FizzBuzz {
 
-    public index: number;
-    public intervale: number;
+public index: number = 1;
+public intervale: any = 0;
 
     constructor() {
         this.intervale = setInterval( () => {
@@ -22,3 +22,4 @@ class FizzBuzz {
     }
 
 }
+new FizzBuzz();
