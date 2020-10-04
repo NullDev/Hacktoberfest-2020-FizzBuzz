@@ -1,0 +1,39 @@
+// Can be compiled to mcfunction by using https://github.com/Stevertus/mcscript/
+// Author: @empdo
+
+var fizz = 0;
+var buzz = 0;
+var did_fizz = 0
+var did_buzz = 0
+
+for(1,100,i) {
+    did_fizz = 0
+    did_buzz = 0
+
+    fizz += 1
+    buzz += 1
+
+    if (fizz == 3) {
+        did_fizz = 1
+        fizz = 0
+    }
+    if (buzz == 5) {
+        did_buzz = 1
+        buzz = 0
+    }
+
+    if (did_fizz == 1 && did_buzz == 1) {
+        /say FizzBuzz
+    } 
+    
+    if (did_fizz == 1 && did_buzz == 0) {
+        /say Fizz
+    } 
+    
+    if (did_buzz == 1 && did_fizz == 0) {
+        /say Buzz
+    } 
+    if (did_fizz == 0 && did_buzz == 0) {
+        /say $(i)
+    }
+}
