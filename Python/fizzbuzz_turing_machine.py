@@ -92,7 +92,7 @@ class DeterministicTuringMachine:
         self.tape = Tape(tape_input)
         self.current_state = start_state
 
-    @ property
+    @property
     def current_letter(self) -> str:
         if self.headpos < 0:
             raise Exception("Head cannot move below 0")
@@ -119,7 +119,7 @@ class DeterministicTuringMachine:
         self.headpos += transition.move_direction
 
         if transition.next_state not in self.states:
-            raise Exception("Invalid next_state")
+            raise Exception(f"Invalid next_state {transition.next_state}")
 
         self.current_state = transition.next_state
 
@@ -144,7 +144,7 @@ tm = DeterministicTuringMachine(
         "F",  # FizzBuzz
         "X"   # START
     },
-    states={"start", 1, 2, 3, 4, 5, 6, 7, "accept", "reject"},
+    states={"start", 0, 1, 2, 3, 4, 5, 6, 7, 8, "accept", "reject"},
     transitions={
         "start": {
             Transition("1", "X", RIGHT, 0),           # Mark first letter
