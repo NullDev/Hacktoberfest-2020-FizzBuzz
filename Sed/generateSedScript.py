@@ -1,6 +1,9 @@
+# A python script to generate a sed script for fizzbuzz
+# Author: @Yash-Singh1
+
 total = 100
 current = 1
-string = "s/fizzbuzz/"
+string = "# A generated sed script for fizzbuzz\n# Author: @Yash-Singh1\n\ns/fizzbuzz/"
 
 while current <= total:
     if current % 3 == 0 and current % 5 != 0:
