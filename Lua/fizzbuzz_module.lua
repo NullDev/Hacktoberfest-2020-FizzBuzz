@@ -1,4 +1,4 @@
--- A fizzbuzz module. Usage: `fb = require 'fizzbuzz4'; fb:run()` optional counter limits :run(x,y) 
+-- A fizzbuzz module. Usage: `fb = require 'fizzbuzz_module'; fb:run()` optional counter limits :run(x,y) 
 -- Author: @darrenkearney
 
 local fizzbuzz = {}
