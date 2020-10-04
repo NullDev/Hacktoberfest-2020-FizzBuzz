@@ -1,0 +1,39 @@
+<!-- FizzBuzz Solution using animation on content pseudo element(::before) in CSS and HTML in 1 line -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<style type="text/css">
+			body {background-color: powderblue;
+						font-family: palatino;
+  						font-size: 200%;
+  						border: 20px solid yellow;
+  						padding: 30px;
+  						margin: 50px;
+  						text-align: center;
+  					}
+		</style>
+	</head>
+	<body>
+		<script>
+			for (var limit = 1; limit <= 100; limit++) 
+			{
+	            if (limit%15 === 0) 
+	               document.write('<br>fizzbuzz<br>');
+
+	            else if(limit%3 === 0)
+	            	document.write('<br>fizz<br>');
+
+	         	else if(limit%5 === 0)
+	         		document.write('<br>buzz<br>');
+	         		
+	         	else
+	         		document.write(limit, ' ');
+	         	
+	        }
+	    </script>
+	</body>
+</html>
