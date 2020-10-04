@@ -1,4 +1,5 @@
 // This is the only FizzBuzz solution God accepts
+// See PR for more information: https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/pull/508
 // Author: @Azgeb
 
 U0 Main(){
