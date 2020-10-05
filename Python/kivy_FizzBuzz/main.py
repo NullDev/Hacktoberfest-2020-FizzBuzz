@@ -1,5 +1,5 @@
 # FizzBuzz with Kivy GUI
-# Author: @fr4nkl1n-1k3h
+# Author: Franklin Ikeh
 import time
 from kivy.app import App
 from kivy.clock import Clock
@@ -33,10 +33,10 @@ class FizzBuzzApp(App):
                     return f"[color=#FF00AA]Fizz[/color][color=#DD00DD]Buzz[/color]"
 
                 elif number % 3 == 0:
-                    return f"[color=#EE0000]Buzz[/color]"
-
-                elif number % 5 == 0:
                     return f"[color=#00BB00]Fizz[/color]"
+                    
+                elif number % 5 == 0:
+                    return f"[color=#EE0000]Buzz[/color]"
 
                 else:
                     # whether to show the current number or not
