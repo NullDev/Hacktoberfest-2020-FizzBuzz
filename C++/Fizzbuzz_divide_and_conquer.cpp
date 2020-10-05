@@ -1,3 +1,6 @@
+// Recursive divide and conquer FizzBuzz, something like a binary search
+// Author: @lusmoura
+
 #include <bits/stdc++.h>
 using namespace std;
 
