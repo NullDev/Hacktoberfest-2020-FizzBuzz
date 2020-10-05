@@ -6,7 +6,7 @@
 public class FizzBuzz_StringBuilder {
 
     public static void main(String[] args) {
-        fizzBuzz(15);
+        fizzBuzz(100);
     }
 
     public static void fizzBuzz(int n) {

@@ -7,13 +7,13 @@ public class FizzBuzz_ModifiedRecursion {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();
-        String res = fizzBuzzRec(1, n);
+        String res = fizzBuzzRec(1, n + 1);
         System.out.println(res);
     }
 
     public static String fizzBuzzRec(int i, int n) {
         if (i == n)
-            return i + " ";
+            return "";
         else if (i % 15 == 0)
             return "FizzBuzz " + fizzBuzzRec(i + 1, n);
         else if (i % 5 == 0)
