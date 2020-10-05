@@ -9,8 +9,7 @@ import java.util.Map;
 import java.util.Random;
 import java.util.stream.Collectors;
 
-/** "PSRF" */
-public class PseudoRandomFizzBuzz {
+public class FizzBuzz_PseudoRandom {
 
     Map<Integer, String> fizzBuzzMap;
     static final long SEED = 694206942069420L;
@@ -24,7 +23,7 @@ public class PseudoRandomFizzBuzz {
 
     public static void main(String[] args) {
         try {
-            PseudoRandomFizzBuzz fizzBuzz = new PseudoRandomFizzBuzz();
+            FizzBuzz_PseudoRandom fizzBuzz = new FizzBuzz_PseudoRandom();
             fizzBuzz.initMap();
             Random gen = new Random(SEED);
             gen.ints(100L, 0, 6942069)
@@ -33,7 +32,7 @@ public class PseudoRandomFizzBuzz {
         } catch (IOException e) {
             e.printStackTrace();
             System.err.println("Does the CSV file containing the content of the HashMap exist, i. e. \"fizzBuzz.csv\"?");
-            System.err.println("If that's not the case please run `java PRFBCSVGenerator.java`");
+            System.err.println("If that's not the case please run `java FizzBuzz_PseudoRandomCSVGen.java`");
         }
     }
 

@@ -1,6 +1,6 @@
 // Long FizzBuzz Solution hardcoded in Java
 // Author) @danielzyy
-public class FizzBuzzHardCode {
+public class FizzBuzz_HardCode {
 
 	public static void main(String[] args) {
 		for (int i= 1;i<=100;i++) {
