@@ -1,3 +1,6 @@
+// Completes the FizzBuzz challenge without the use of for loops or modulo operator
+// Author: @StephenTrainor
+
 #include <stdio.h>
 
 int main(void) {
