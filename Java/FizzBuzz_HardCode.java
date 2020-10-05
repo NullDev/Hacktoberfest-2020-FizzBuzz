@@ -1,5 +1,6 @@
 // Long FizzBuzz Solution hardcoded in Java
-// Author) @danielzyy
+// Author: @danielzyy
+
 public class FizzBuzz_HardCode {
 
 	public static void main(String[] args) {

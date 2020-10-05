@@ -1,5 +1,6 @@
-
 // FizzBuzz problem
+// @Amrita211
+
 import java.util.Scanner;
 
 public class FizzBuzz_Scanner {

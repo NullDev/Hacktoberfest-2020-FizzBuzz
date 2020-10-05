@@ -1,3 +1,6 @@
+// FizzBuzz using Java Streams in one line 
+// Author: @sudesh1611 
+
 import java.util.stream.IntStream;
 
 public class FizzBuzz_StreamOneLiner {

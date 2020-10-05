@@ -1,3 +1,6 @@
+// Created FizzBuzz using Java 8.
+// Author: @amitagarwalaa57
+
 import java.util.Scanner;
 import java.util.stream.IntStream;
 

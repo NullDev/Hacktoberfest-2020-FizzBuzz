@@ -1,6 +1,7 @@
 // This is an implementation of fizzBuzz using linkedList without the builtin collections.
 // Numbers are added to the linkedlist then printed from there.
 // Author : @Kayne103
+
 public class FizzBuzz_LinkedList {
     Node head;
 

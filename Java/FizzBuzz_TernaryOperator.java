@@ -1,3 +1,6 @@
+// Create FizzBuzz ternary operator
+// Author: @gerdon
+
 public class FizzBuzz_TernaryOperator {
 
 	private Integer qtdCount;
