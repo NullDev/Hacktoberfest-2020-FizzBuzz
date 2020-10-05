@@ -1,0 +1,65 @@
+body {
+ background-color: cadetblue;
+}
+h1 {
+    text-align: center;
+    font-size: 45px;
+}
+button{
+    size: 40px;
+    color: green;
+}
+
+.prev-button {
+    size: 30px;
+    color: red;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+}
+.next-button {
+    position: absolute;
+    color: green;
+    top: 50%;
+    left: 75%;
+}
+
+.start {
+    position: absolute;
+    color: green;
+    top: 50%;
+    left: 50%;
+}
+
+.fizzbuzz {
+    text-align: center;
+    font-size: 40px;
+    color: salmon;
+}
+
+.fizz {
+    text-align: center;
+    font-size: 40px;
+    color:sandybrown;
+}
+
+.buzz {
+    text-align: center;
+    font-size: 40px;
+    color: lemonchiffon;
+}
+
+.number{
+    text-align: center;
+    font-size: 30px;
+    color:purple;
+}
+.fourzerofourmessage {
+    display: flex;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 28%;
+}
