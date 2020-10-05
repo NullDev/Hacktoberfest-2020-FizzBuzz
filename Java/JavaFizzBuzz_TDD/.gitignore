@@ -1,0 +1,7 @@
+# Ignore Gradle build output directory
+build
+bin
+
+.*
+!.gitattributes
+!.gitignore
