@@ -1,0 +1,72 @@
+<BackColor@Widget>
+    background_color: 1,1,1,1
+    canvas.before:
+        Color:
+            rgba: root.background_color
+        Rectangle:
+            size: self.size
+            pos: self.pos
+            
+<BackLabel@Label+BackColor>
+
+GridLayout:
+    rows: 2
+
+    GridLayout:
+        cols: 2
+        padding: 5
+        spacing: 5
+       
+        BoxLayout:
+            orientation: "vertical"
+                    
+            BackLabel:
+                text: "[color=#FF00AA]Fizz[/color][color=#DD00DD]Buzz[/color]"
+                font_size: 50
+                size_hint: (1, .5)
+                bold: True
+                markup: True
+                    
+            Button:
+                id: start_btn
+                text: "Start"
+                background_color: (0,0,0,.4)
+                font_size: 40
+                size_hint: (1, .5)
+                color: (1,1,1,1)
+                on_press: app.start_stop()
+                    
+        BoxLayout:
+            orientation: "vertical"
+            
+            BackLabel:
+                background_color: (1,1,1,.8)
+                id: fb_scr
+                text: " "
+                color: (0,0,0,1)
+                font_size: 70
+                bold: True
+                markup: True
+            
+            BackLabel:
+                background_color: (.7,.7,.7,.5)
+                id: num_scr
+                text: " "
+                color: (0,0,0,.6)
+                font_size: 70
+                bold: True  
+                
+    BoxLayout:
+        orientation: "vertical"
+        padding: 7
+        
+        BackLabel:          
+            id: fb_num_scr
+            font_size: 25
+            color: (0,0,0,.7) 
+            text: ""
+            text_size: self.size
+            size_hint: (1, .7)
+            halign: "left"
+            valign: "top"
+            markup: True
