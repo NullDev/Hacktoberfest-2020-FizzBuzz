@@ -8,10 +8,8 @@ Submit creative FizzBuzz solutions in any language you want!
 <hr>
 
 <p align="center"><b>
-Read the official issue for an intro: <br>
-https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/issues/3
-</b><br><br>
-<a href="https://www.urbandictionary.com/define.php?term=tl%3Bdr">TL;DR:</a> We're searching for creative/extraordinary/weird FizzBuzz solutions :) 
+  <a href="https://www.urbandictionary.com/define.php?term=tl%3Bdr"><b>TL;DR:</b></a><br>
+  We're searching for creative/extraordinary/weird FizzBuzz solutions :) 
 </p>
 
 <hr>
