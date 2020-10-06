@@ -7,7 +7,7 @@ Submit creative FizzBuzz solutions in any language you want!
 
 <hr>
 
-<p align="center"><b>
+<p align="center">
   <a href="https://www.urbandictionary.com/define.php?term=tl%3Bdr"><b>TL;DR:</b></a><br>
   We're searching for creative/extraordinary/weird FizzBuzz solutions :) 
 </p>
