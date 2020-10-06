@@ -1,0 +1,566 @@
+<!-- 
+  FizzBuzz CSS Keyframes
+  Author: @ntsd
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0;
+      }
+      #fizz-buzz {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+      }
+      #fizz-buzz::after {
+        content: "";
+        height: 1rem;
+        background: white;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        animation: loader linear 50s infinite running;
+      }
+      @keyframes loader {
+        from {
+          transform: translateX(-100%);
+        }
+        to {
+          transform: translateX(0%);
+        }
+      }
+      #fizz-buzz::before {
+        content: "";
+        color: white;
+        font-size: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: inherit;
+        animation: fizz-buzz linear 50s infinite running;
+      }
+      @keyframes fizz-buzz {
+        /* keyframes generate by python code
+        for i in range(1, 101):
+          text = i
+          color = "black"
+          if i % 15 == 0:
+              text = "FizzBuzz"
+              color = "red"
+          elif i % 3 == 0:
+              text = "Fizz"
+              color = "blue"
+          elif i % 5 == 0:
+              text = "Buzz"
+              color = "green"
+          print(f'{i}% {{content: "{text}";background-color: {color};}}\n')
+        */
+        1% {
+          content: "1";
+          background-color: black;
+        }
+
+        2% {
+          content: "2";
+          background-color: black;
+        }
+
+        3% {
+          content: "Fizz";
+          background-color: blue;
+        }
+
+        4% {
+          content: "4";
+          background-color: black;
+        }
+
+        5% {
+          content: "Buzz";
+          background-color: green;
+        }
+
+        6% {
+          content: "Fizz";
+          background-color: blue;
+        }
+
+        7% {
+          content: "7";
+          background-color: black;
+        }
+
+        8% {
+          content: "8";
+          background-color: black;
+        }
+
+        9% {
+          content: "Fizz";
+          background-color: blue;
+        }
+
+        10% {
+          content: "Buzz";
+          background-color: green;
+        }
+
+        11% {
+          content: "11";
+          background-color: black;
+        }
+
+        12% {
+          content: "Fizz";
+          background-color: blue;
+        }
+
+        13% {
+          content: "13";
+          background-color: black;
+        }
+
+        14% {
+          content: "14";
+          background-color: black;
+        }
+
+        15% {
+          content: "FizzBuzz";
+          background-color: red;
+        }
+
+        16% {
+          content: "16";
+          background-color: black;
+        }
+
+        17% {
+          content: "17";
+          background-color: black;
+        }
+
+        18% {
+          content: "Fizz";
+          background-color: blue;
+        }
+
+        19% {
+          content: "19";
+          background-color: black;
+        }
+
+        20% {
+          content: "Buzz";
+          background-color: green;
+        }
+
+        21% {
+          content: "Fizz";
+          background-color: blue;
+        }
+
+        22% {
+          content: "22";
+          background-color: black;
+        }
+
+        23% {
+          content: "23";
+          background-color: black;
+        }
+
+        24% {
+          content: "Fizz";
+          background-color: blue;
+        }
+
+        25% {
+          content: "Buzz";
+          background-color: green;
+        }
+
+        26% {
+          content: "26";
+          background-color: black;
+        }
+
+        27% {
+          content: "Fizz";
+          background-color: blue;
+        }
+
+        28% {
+          content: "28";
+          background-color: black;
+        }
+
+        29% {
+          content: "29";
+          background-color: black;
+        }
+
+        30% {
+          content: "FizzBuzz";
+          background-color: red;
+        }
+
+        31% {
+          content: "31";
+          background-color: black;
+        }
+
+        32% {
+          content: "32";
+          background-color: black;
+        }
+
+        33% {
+          content: "Fizz";
+          background-color: blue;
+        }
+
+        34% {
+          content: "34";
+          background-color: black;
+        }
+
+        35% {
+          content: "Buzz";
+          background-color: green;
+        }
+
+        36% {
+          content: "Fizz";
+          background-color: blue;
+        }
+
+        37% {
+          content: "37";
+          background-color: black;
+        }
+
+        38% {
+          content: "38";
+          background-color: black;
+        }
+
+        39% {
+          content: "Fizz";
+          background-color: blue;
+        }
+
+        40% {
+          content: "Buzz";
+          background-color: green;
+        }
+
+        41% {
+          content: "41";
+          background-color: black;
+        }
+
+        42% {
+          content: "Fizz";
+          background-color: blue;
+        }
+
+        43% {
+          content: "43";
+          background-color: black;
+        }
+
+        44% {
+          content: "44";
+          background-color: black;
+        }
+
+        45% {
+          content: "FizzBuzz";
+          background-color: red;
+        }
+
+        46% {
+          content: "46";
+          background-color: black;
+        }
+
+        47% {
+          content: "47";
+          background-color: black;
+        }
+
+        48% {
+          content: "Fizz";
+          background-color: blue;
+        }
+
+        49% {
+          content: "49";
+          background-color: black;
+        }
+
+        50% {
+          content: "Buzz";
+          background-color: green;
+        }
+
+        51% {
+          content: "Fizz";
+          background-color: blue;
+        }
+
+        52% {
+          content: "52";
+          background-color: black;
+        }
+
+        53% {
+          content: "53";
+          background-color: black;
+        }
+
+        54% {
+          content: "Fizz";
+          background-color: blue;
+        }
+
+        55% {
+          content: "Buzz";
+          background-color: green;
+        }
+
+        56% {
+          content: "56";
+          background-color: black;
+        }
+
+        57% {
+          content: "Fizz";
+          background-color: blue;
+        }
+
+        58% {
+          content: "58";
+          background-color: black;
+        }
+
+        59% {
+          content: "59";
+          background-color: black;
+        }
+
+        60% {
+          content: "FizzBuzz";
+          background-color: red;
+        }
+
+        61% {
+          content: "61";
+          background-color: black;
+        }
+
+        62% {
+          content: "62";
+          background-color: black;
+        }
+
+        63% {
+          content: "Fizz";
+          background-color: blue;
+        }
+
+        64% {
+          content: "64";
+          background-color: black;
+        }
+
+        65% {
+          content: "Buzz";
+          background-color: green;
+        }
+
+        66% {
+          content: "Fizz";
+          background-color: blue;
+        }
+
+        67% {
+          content: "67";
+          background-color: black;
+        }
+
+        68% {
+          content: "68";
+          background-color: black;
+        }
+
+        69% {
+          content: "Fizz";
+          background-color: blue;
+        }
+
+        70% {
+          content: "Buzz";
+          background-color: green;
+        }
+
+        71% {
+          content: "71";
+          background-color: black;
+        }
+
+        72% {
+          content: "Fizz";
+          background-color: blue;
+        }
+
+        73% {
+          content: "73";
+          background-color: black;
+        }
+
+        74% {
+          content: "74";
+          background-color: black;
+        }
+
+        75% {
+          content: "FizzBuzz";
+          background-color: red;
+        }
+
+        76% {
+          content: "76";
+          background-color: black;
+        }
+
+        77% {
+          content: "77";
+          background-color: black;
+        }
+
+        78% {
+          content: "Fizz";
+          background-color: blue;
+        }
+
+        79% {
+          content: "79";
+          background-color: black;
+        }
+
+        80% {
+          content: "Buzz";
+          background-color: green;
+        }
+
+        81% {
+          content: "Fizz";
+          background-color: blue;
+        }
+
+        82% {
+          content: "82";
+          background-color: black;
+        }
+
+        83% {
+          content: "83";
+          background-color: black;
+        }
+
+        84% {
+          content: "Fizz";
+          background-color: blue;
+        }
+
+        85% {
+          content: "Buzz";
+          background-color: green;
+        }
+
+        86% {
+          content: "86";
+          background-color: black;
+        }
+
+        87% {
+          content: "Fizz";
+          background-color: blue;
+        }
+
+        88% {
+          content: "88";
+          background-color: black;
+        }
+
+        89% {
+          content: "89";
+          background-color: black;
+        }
+
+        90% {
+          content: "FizzBuzz";
+          background-color: red;
+        }
+
+        91% {
+          content: "91";
+          background-color: black;
+        }
+
+        92% {
+          content: "92";
+          background-color: black;
+        }
+
+        93% {
+          content: "Fizz";
+          background-color: blue;
+        }
+
+        94% {
+          content: "94";
+          background-color: black;
+        }
+
+        95% {
+          content: "Buzz";
+          background-color: green;
+        }
+
+        96% {
+          content: "Fizz";
+          background-color: blue;
+        }
+
+        97% {
+          content: "97";
+          background-color: black;
+        }
+
+        98% {
+          content: "98";
+          background-color: black;
+        }
+
+        99% {
+          content: "Fizz";
+          background-color: blue;
+        }
+
+        100% {
+          content: "Buzz";
+          background-color: green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="fizz-buzz"></div>
+  </body>
+</html>
