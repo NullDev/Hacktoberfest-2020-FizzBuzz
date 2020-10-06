@@ -1,0 +1,32 @@
+# AlphaBeta doesn't support comments, so I put my header/comments in a separate file.
+# Tested with https://github.com/TryItOnline/alphabeta
+# You can run it online at https://tio.run/#alphabeta
+# Author: @PAndaContron
+
+# Code explanation, bit by bit:
+x               # Initialize R1 to 0
+a               # Increment R1
+yY              # Reset R2 and memory pointer
+ggg             # Set R2 to 3
+vI              # Store R1 % R2 in memory
+S               # Increment memory pointer
+gg              # Set R2 to 5
+vI              # Store R1 % R2 in memory
+TH              # Load R1 % 3 into R2
+n               # Set R3 to !R2
+ZYUUUUUUTTTTZR  # Jump to the next check if R3 is 0 (if R1 is not divisible by 3)
+ykjjjDL         # Print "F"
+ykgggggDL       # Print "i"
+hhhiiDLL        # Print "zz"
+SH              # Load R1 % 5 into R2
+n               # Set R3 to !R2
+ZUUUUUTTTTTTZR  # Jump to the next check if R3 is 0 (if R1 is not divisible by 5)
+ykjjjhhhhDL     # Print "B"
+iiiiigDL        # Print "u"
+gggggDLL        # Print "zz"
+ZYWUUUTTTTTTTZ  # Set position pointer to "Print newline"
+HDR             # Jump to "Print newline" if R1 is divisible by 5
+THDR            # Jump to "Print newline" if R1 is divisible by 3
+CM              # Print R1
+yiDL            # Print newline
+ykZYSZO         # Jump back to "Increment R1" if R1 != 100
