@@ -3,7 +3,7 @@
     Author: @nimbl0
  */
 
-public class Main {
+public class FizzBuzz_CharsBytesHex {
 
     public static void main(String[] args) {
         byte mainCounter = 0b00000000;
@@ -24,10 +24,10 @@ public class Main {
         buzz[2] = 0x7a;
         buzz[3] = 0x7a;
 
-        while(mainCounter < mainLength) {
-            if(mainCounter % 0b00000011 == 0b00000000) {
+        while (mainCounter < mainLength) {
+            if (mainCounter % 0b00000011 == 0b00000000) {
                 System.out.println(fizz);
-            } else if(mainCounter % 0b00000101 == 0b00000000) {
+            } else if (mainCounter % 0b00000101 == 0b00000000) {
                 System.out.println(buzz);
             } else {
                 System.out.println(mainCounter);

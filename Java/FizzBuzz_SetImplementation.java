@@ -10,15 +10,16 @@ interface Result {
     String result(int x);
 }
 
-public class FizzBuzzSetImplementation {
+public class FizzBuzz_SetImplementation {
     public static void main(String[] args) {
-        class Pair<X, Y> { 
-            public final X first; 
-            public final Y second; 
-            public Pair(X first, Y second) { 
-                this.first = first; 
-                this.second = second; 
-            } 
+        class Pair<X, Y> {
+            public final X first;
+            public final Y second;
+
+            public Pair(X first, Y second) {
+                this.first = first;
+                this.second = second;
+            }
         }
 
         HashSet<Integer> fizz = new HashSet<Integer>();
@@ -28,7 +29,7 @@ public class FizzBuzzSetImplementation {
         HashSet<Integer> buzz = new HashSet<Integer>();
         for (int i = 5; i <= 100; i += 5)
             buzz.add(i);
-        
+
         HashSet<Integer> fizzBuzz = new HashSet<Integer>(fizz);
         fizzBuzz.retainAll(buzz);
 

@@ -75,7 +75,7 @@ Read more about it here: https://www.tomdalling.com/blog/software-design/fizzbuz
 8. [FizzBuzz in Shakespearean](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/blob/master/Shakespeare%20Programming%20Language/fizzbuzz.spl) by [@C0DINGLE](https://github.com/C0DINGLE) - [See PR](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/pull/559) for more information!
 9. [Overly complicated FizzBuzz solution (Python)](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/blob/master/Python/FizzBuzz-2.py) by [@InitialPosition](https://github.com/InitialPosition)
 10. [Hardcoded FizzBuzz (Python)](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/blob/master/Python/FizzBuzz-HardCoded.py) by [@khong612](https://github.com/khong612)
-11. [FizzBuzz in CharArrays, Bytes and Hex Values (Java)](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/blob/master/Java/FizzBuzz-Main.java) by [@nimbl0](https://github.com/nimbl0)
+11. [FizzBuzz in CharArrays, Bytes and Hex Values (Java)](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/blob/master/Java/FizzBuzz_CharsBytesHex.java) by [@nimbl0](https://github.com/nimbl0)
 
 <hr>
 
