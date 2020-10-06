@@ -18,7 +18,7 @@ https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/issues/3
 
 # :exclamation: READ BEFORE CONTRIBUTING
 **THIS REPOSITORY IS IN COMPLIANCE WITH THE HACKTOBERFEST VALUES AND RULES:** <br>
-We cannot accept every PR and label invalid one's accordingly! Examples are off-topic contributions, duplicated solutions, copy-paste solutions as well as obvious +1 attempts. <br>
+We cannot and **will not** accept every PR and label invalid one's accordingly! Examples are off-topic contributions, duplicated solutions, copy-paste solutions as well as obvious +1 attempts. <br>
 We are searching for **interesting/creative/abstract/unique/extraordinary/weird** solutions to FizzBuzz. Only one _normal_ solution per language is permitted! <br>
 This repository aligns with [the values of the Hacktoberfest](https://hacktoberfest.digitalocean.com/details) as it is meant as a fun challenge as well as a platform to learn (experiment with different solutions, challenging yourself to come up with creative solutions to a unique problem). <br>
 **Denied PR's can be found [here](https://github.com/NLDev/Hacktoberfest-2020-FizzBuzz/issues?q=label%3Ainvalid+is%3Aclosed)**.
