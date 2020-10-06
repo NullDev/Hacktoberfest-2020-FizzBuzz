@@ -1,5 +1,11 @@
+/*
+ FizzBuzz using recursion in C. Takes 'n' input as command line parameter while running.
+ Author: @evamy
+*/
+
 #include<stdio.h>
 #include<stdlib.h>
+
 void fizzbuzz(int current, int n) {
     if (current%3 == 0 && current%5 == 0) {
         printf("FizzBuzz\n");
