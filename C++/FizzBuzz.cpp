@@ -14,8 +14,8 @@ int main(){
       cout<<"BUZZ ";
      if((i%3)*(i%5))    // if (i%3) && (i%5) !=0, then only the if case gets executed
         cout<<i<<" ";
-
+     
      cout<<",";
 }
 
-}  
+}
