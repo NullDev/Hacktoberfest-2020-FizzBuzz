@@ -7,7 +7,7 @@ elements in `nums` is unsorted or has negative numbers
 Try using this with `nums = range(0, 100, 5)` for instance :D
 """
 
-nums = range(0, 20000, 5)
+nums = range(1, 101)
 last_num = 1
 
 with open('fizz_buzz.txt', 'w') as f:
