@@ -1,4 +1,4 @@
-// The solution follows an approach for making 3 disjoint sets(divisible by 3, divisible by 5, divisible by both), the tree structure
+// The solution follows an approach for making 3 disjoint sets(divisible by 15,divisible by 3, divisible by 5), the tree structure
 // in which a number is present will contain the string which it is expected to print.
 // Author : yadavnaman
 #include <bits/stdc++.h>
@@ -12,6 +12,9 @@ void make_set(int n) {
     for(int a=1;a<=n;a++){
         par[a]=a;
         sz[a]=1;
+        if(a <= 100){
+        	res[a] = to_string(a);
+        }
         if(a == 101){
         	res[a] = "Fizz";
         }
@@ -43,16 +46,27 @@ void union_sets(int a, int b) {
 
 void FizzBuzz() {
 	make_set(103);
-	rep(i,1,101){
-		if(i%3 == 0 && i%5 == 0){union_sets(103,i);}
-		else if(i%3==0){union_sets(101,i);}
-		else if(i%5 == 0){union_sets(102,i);}
-
-		if(find_set(i) == i){
-			cout<< i << " ";
-		}else{
-			cout << res[find_set(i)] << " ";
+	int i = 3;
+	i = 15;
+	for(; i<=100; i+=15){
+		union_sets(103,i);
+	}
+	i = 3;
+	for(; i<=100; i+=3){
+		if(i == find_set(i)){
+			union_sets(101,i);
 		}
+	}
+	i = 5;
+	for(; i<=100; i+=5){
+		if(i == find_set(i)){
+			union_sets(102,i);
+		}
+	}
+	
+
+	rep(i,1,101){
+		cout << res[find_set(i)] << " ";
 	}
 
 }
