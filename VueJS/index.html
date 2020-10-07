@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fizzbuzz</title>
+    <style>
+      .dot {
+        height: 20px;
+        width: 20px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 20px;
+      }
+      .active {
+        background-color: red;
+      }
+      #app {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .dot-comp {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <dot v-for="i in count" :key="i"></dot>
+    </div>
+
+    <script type="text/x-template" id="dot-template">
+      <div class="dot-comp">
+          <div class="dot" :class="{active: isActive}"></div>
+          <h3>{{ message }}</h3>
+      </div>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
