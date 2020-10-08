@@ -2,7 +2,6 @@ import macros
 
 macro fb(i : untyped) : untyped =
     result = newStmtList()
-    echo i.treeRepr
     for j in 0..<i.intVal:
         if j mod 15 == 0:
             result.add(nnkCommand.newTree(ident("echo"), newLit("FizzBuzz")))
