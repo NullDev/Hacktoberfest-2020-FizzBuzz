@@ -1,0 +1,51 @@
+<! -- FizzBuzz Solution in `Jelly` -->
+<! -- Authored by Isaac Yep -->
+
+Main<>
+	count = Read<>
+	n = 1
+
+	loop n <= count
+		FizzBuzzNumber<n>
+		n => n + 1
+	end
+end
+
+FizzBuzzNumber<x>
+	Write<x>
+	WriteChar<58>
+	WriteChar<32>
+
+	three = (x % 3) == 0
+	five = (x % 5) == 0
+
+	if three * five
+		Fizz<>
+		Buzz<>
+	end
+	elif three
+		Fizz<>
+	end
+	elif five
+		Buzz<>
+	end
+	else
+		Write<x>
+	end
+
+	WriteNewLine<>
+end
+
+Fizz<>
+	WriteChar<70>
+	WriteChar<105>
+	WriteChar<122>
+	WriteChar<122>
+end
+
+Buzz<>
+	WriteChar<66>
+	WriteChar<117>
+	WriteChar<122>
+	WriteChar<122>
+end
