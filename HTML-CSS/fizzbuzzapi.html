@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<div id="app">
+    <title>{{ text }}</title>
+    <div style="display: table; position: absolute; top: 0; left: 0; height: 100%; width: 100%;">
+        <div style="height: 300px; display: table-cell; vertical-align: middle;">
+            <img :src="getUrl" alt="fizz buzz!" style=" display: block; margin-left: auto; margin-right:auto; width: auto; max-height: 100%;">
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/numbered/1.1.0/index.js" integrity="sha512-bB/dpVMXvXCJc5VNlr4eYWZOgfDoH89S+Hmp9gvh3yJOZIvZ8gunxFvBHxk7r2yOOv/HigvptAtUCyPqd6kusg==" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.js" integrity="sha512-nqIFZC8560+CqHgXKez61MI0f9XSTKLkm0zFVm/99Wt0jSTZ7yeeYwbzyl0SGn/s8Mulbdw+ScCG41hmO2+FKw==" crossorigin="anonymous"></script>
+<script>
+new Vue({
+    el: '#app',
+    data: {
+        counter: 1,
+        text: "",
+    },
+    computed: {
+        getUrl: function () {
+            if (this.counter === 0) {
+                this.text = "FizzBuzz"
+                return `https://source.unsplash.com/featured/?${this.text},fizzbuzz,fizz-buzz`
+            }
+            else if (this.counter % 3 === 0) {
+                this.text = "Fizz"
+                return `https://source.unsplash.com/featured/?${this.text},fizz,fiss`
+            }
+            else if (this.counter % 5 === 0) {
+                this.text = "Buzz"
+                return `https://source.unsplash.com/featured/?${this.text},buzz,buss`
+            }
+            else {
+                this.text = numbered(this.counter)
+                return `https://source.unsplash.com/featured/?${this.text},${this.counter}`
+            }
+        },
+    },
+    mounted: function () {
+        setInterval(this.incrementCounter, 5000)
+    },
+    methods: {
+        incrementCounter() {
+            this.counter = this.counter +1
+        }
+    },
+})
+</script>
+</body>
+</html>
