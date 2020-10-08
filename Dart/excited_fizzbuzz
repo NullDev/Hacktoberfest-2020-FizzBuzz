@@ -1,0 +1,34 @@
+//FizzBuzz through recursion in Dart
+//Author: @gautambagla
+
+abstract class BoringFizzBuzz{
+  void fizzbuzz(int n);
+}
+
+class ExcitedFizzBuzz extends BoringFizzBuzz{
+  @override
+  fizzbuzz(int n){
+    if(n == 1){
+      print(n);
+      return;
+    }
+    else if(n%15==0){
+      print("FizzBuzz");
+    }
+    else if(n%3 == 0) {
+      print("Fizz");
+    }
+    else if(n%5==0){
+      print("Buzz");
+    }
+    else{
+      print(n);
+    }
+    return fizzbuzz(n-1);
+  }
+}
+
+void main(){
+  ExcitedFizzBuzz buzzer = ExcitedFizzBuzz();
+  buzzer.fizzbuzz(100);
+}
