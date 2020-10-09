@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 
 # FizzBuzz in Perl 5.10
 
@@ -8,7 +7,6 @@ use diagnostics;
 
 use 5.10.0;
 
-# codinghorror.com/blog/2007/02/why-cant-programmers-program.html
 # Write a program that prints the numbers from 1 to 100. But for
 # multiples of three print "Fizz" instead of the number and for the
 # multiples of five print "Buzz". For numbers which are multiples of
