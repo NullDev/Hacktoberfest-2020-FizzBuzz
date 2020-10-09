@@ -1,0 +1,1 @@
+source("https://gist.githubusercontent.com/mskyttner/539973fa6149b27d6265c6fd430ee624/raw/d3e2370bed7cdefa1ae2de168ee21b1e394204a0/bizzfuzz.R"); message("Fuzz biz:"); bizzfuzz(); message("\nbizzfuzz on string vector:"); bizzfuzz(sprintf("%s\U00AE", 15:1 + 1e-7), fx = "fuzz", bx = "bizz", merge_fb = function(x, y) paste0(y, x));
