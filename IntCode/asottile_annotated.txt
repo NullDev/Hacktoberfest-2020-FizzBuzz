@@ -1,0 +1,157 @@
+;;;;; main  113 opcodes
+;;; globals
+; start: 9001
+; end: 9002
+; started: 9003
+; main_temp: 9004
+; remainder_3: 9005
+; remainder_5: 9006
+; both_non_divisible: 9007
+
+1101,0,1,9001,   ; start = 1
+1101,0,100,9002, ; end = 100
+1101,0,0,9003,   ; started = 0
+
+; label: LOOP @12
+; if end < start: goto done
+7,9002,9001,9004 ; main_temp = end < start
+1005,9004,115,  ; if main_temp: goto label(END)
+
+    1006,9003,26  ; if not started: goto lable(AFTERCOMMA)
+
+        104,44,104,32  ; print ", "
+
+    ; label(AFTERCOMMA) @26
+    1101,0,1,9003          ; started = 1
+
+    101,0,9001,10005       ; r1 = start
+    1101,0,3,10006         ; r2 = 3
+    1101,0,45,10000,       ; call divmod  ;
+    1106,0,118,            ; third is FN(divmod)
+    ; @45
+    101,0,10002,9005       ; remainder_3 = ret2
+
+    ;
+    101,0,9001,10005       ; r1 = start
+    1101,0,5,10006         ; r2 = 5
+    1101,0,64,10000,       ; call divmod
+    1106,0,118,            ; FN(divmod)
+    ; @64
+    101,0,10002,9006       ; remainder_5 = ret2
+
+    2,9005,9006,9007       ; both_non_divisible = remainder_3 * remainder_5
+
+    1005,9005,83,          ; if remainder_3: goto label(CHECK5)
+
+        104,70,104,105,104,122,104,122,  ; print "Fizz"
+
+    ; label CHECK5 @83
+    1005,9006,94           ; if remainder_5: goto label(ELSE)
+
+        104,66,104,117,104,122,104,122,  ; print "Buzz"
+
+    ; label ELSE  @94
+    1006,9007,108      ; if not both_non_devisible: goto label(ADD)
+
+        101,0,9001,11001    ; n = start
+        1101,0,108,11000,   ; call printnum(i)
+        1106,0,155,         ; FN(printnum),
+
+    ;  label(ADD) @108
+    101,1,9001,9001         ; start += 1
+
+    ; GOTO LOOP
+    1106,0,12,
+
+; label END @115
+104,10,  ; print "\n"
+99,
+
+;;;;; divmod (38 opcodes) @117
+;;; divmod globals
+; retaddr: 10000
+; ret1:    10001
+; ret2:    10002
+; n:       10005
+; mod:     10006
+; sub:     10007
+; tmp:     10008
+
+
+; 8 opcode chunk
+1101,0,0,10007,         ; set r3 = 0        ; i = 0
+102,-1,10006,10009,     ; set r5 = -1 * r2  ; sub = -1 * mod
+
+; label: LOOP @126
+; 19 opcode chunk
+7,10005,10006,10008,    ; r4 = r1 < r2      ; tmp = n < mod
+1005,10008,144,         ; if r4: goto label(END)
+
+;
+1,10009,10005,10005, ; r1 += r5          ; n += sub  (-= mod)
+101,1,10007,10007,   ; r3 += 1           ; i += 1
+1106,0,126,          ; goto label(LOOP)
+
+; label: END @144
+; 11 opcode chunk
+
+101,0,10007,10001,   ; ret1 = r3         ; return i
+101,0,10005,10002,   ; ret2 = r1         ; return n
+
+; return
+106,0,10000,
+
+;;;;; printnum(n) -> None  @155
+;;; globals
+; retaddr:   11000
+; n:         11001
+; tens:      11002
+; tmp:       11003
+
+1101,0,10,11002         ; tens = 10
+
+; label LOOP1  @159
+7,11001,11002,11003     ; tmp = n < tens
+1005,11003,173             ; if tmp: goto lable(TENSDONE)
+
+    102,10,11002,11002      ; tens *= 10
+    1106,0,159              ; goto LOOP1
+
+; label TENSDONE @173
+101,0,11002,10005       ; r1 = tens
+1101,0,10,10006         ; r2 = 10
+1101,0,188,10000        ; retaddr = label(AFTERDIVMOD1)
+1106,0,118,             ; jump to divmod
+
+; label AFTERDIVMOD1 @188
+101,0,10001,11002       ; tens = ret1
+
+; label LOOP2  @192
+1006,11002,253     ; if not tens: goto label(DONE)
+
+    101,0,11001,10005        ; r1 = n
+    101,0,11002,10006        ; r2 = tens
+    1101,0,210,10000         ; retaddr = label(AFTERDIVMOD2)
+    1106,0,118               ; jump to divmod
+
+    ; label AFTERDIVMOD2 @210
+    101,0,10001,10005       ; r1 = ret1
+    1101,0,10,10006         ; r2 = 10
+    1101,0,225,10000        ; retaddr = label(AFTERDIVMOD3)
+    1106,0,118              ; jump to divmod
+
+    ; label AFTERDIVMOD3 @225
+    101,48,10002,10002      ; ret2 += ord('0')
+    4,10002                 ; print(chr(ret2))
+
+    101,0,11002,10005       ; r1 = tens
+    1101,0,10,10006         ; r2 = 10
+    1101,0,246,10000        ; retaddr = label(AFTERDIVMOD4)
+    1106,0,118              ; jump to divmod
+
+    ; label AFTERDIVMOD4 @246
+    101,0,10001,11002       ; tens = r1
+    1106,0,192              ; goto label(LOOP2)
+
+; label DONE @253
+106,0,11000
