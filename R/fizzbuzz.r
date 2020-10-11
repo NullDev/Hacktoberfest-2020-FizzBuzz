@@ -1,7 +1,1 @@
-fizzbuzz <- function(num) {
-   if (num %% 3  == 0 && num %% 5 == 0) {print("FizzBuzz")}
-   else if (num %% 3 == 0) {print("Buzz")}
-   else if (num %% 5 == 0) {print("Fizz")}
-   else print(num)
-}
-sapply(1:100, fizzbuzz)
+source("https://gist.githubusercontent.com/mskyttner/539973fa6149b27d6265c6fd430ee624/raw/d3e2370bed7cdefa1ae2de168ee21b1e394204a0/bizzfuzz.R"); message("Fuzz biz:"); bizzfuzz(); message("\nbizzfuzz on string vector:"); bizzfuzz(sprintf("%s\U00AE", 15:1 + 1e-7), fx = "fuzz", bx = "bizz", merge_fb = function(x, y) paste0(y, x));
