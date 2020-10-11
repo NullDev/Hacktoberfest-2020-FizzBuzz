@@ -1,0 +1,26 @@
+% FizzBuzz in LaTeX
+% Author: @cnguyen-uk
+
+\documentclass{article}
+\usepackage{intcalc}  % Include \intcalcMod{num}{mod}
+\usepackage{etoolbox}  % Include \ifnumequal{intexpression}{intexpressiontocompare}{trueexecution}{falseexecution}
+
+\begin{document}
+
+\newcounter{int}  % Declare variable 
+\setcounter{int}{1}  % Initialise variable
+
+\loop \ifnum \value{int}<101
+    % This nested if-then logic has Java-esque braces for readability.
+    % Note that the spacing in the syntax does not matter for compilation purposes.
+     \ifnumequal{\intcalcMod{\theint}{15}} {0} {FizzBuzz \par}{
+        \ifnumequal{\intcalcMod{\theint}{5}} {0} {Buzz \par}{
+            \ifnumequal{\intcalcMod{\theint}{3}} {0} {Fizz \par}{
+                \theint \par
+            }
+        }
+    }
+    \addtocounter{int}{1}
+\repeat
+
+\end{document}
