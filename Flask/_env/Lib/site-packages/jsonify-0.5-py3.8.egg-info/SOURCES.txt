@@ -1,0 +1,8 @@
+README
+setup.py
+jsonify/__init__.py
+jsonify/convert.py
+jsonify.egg-info/PKG-INFO
+jsonify.egg-info/SOURCES.txt
+jsonify.egg-info/dependency_links.txt
+jsonify.egg-info/top_level.txt

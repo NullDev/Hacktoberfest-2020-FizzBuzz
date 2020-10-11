@@ -1,25 +1,25 @@
-# Python 2.7
 
-'''
-124 0 0 100 1    00      22 12 114 30 0     124 0 0 100
-02               00                22              12
-114 30 0         100              03              00
-71               72             110             41
-00               124           00              00
-100              01          00               22
-115              48        00               100
-04               00       71 72 110 23     0 124 0 0 100
+answer=[]
 
+def fizz_buzz(start,end):
+    for i in range(start,end+1):
+    
+        if i%3==0 and i%5==0:
+            answer.append('FizzBuzz')
+        elif i%3==0:
+            answer.append('Fizz')
+        elif i%5==0:
+            answer.append('Buzz')
+        else:
+            answer.append(str(i))
 
-2 0 22 115        66           00    100 5 0 71 72     110 5 0 124 0
-00        71      72          100             00                00
-83 4 7 24         24           00            19               24
-24        00      24           34          23               65
-26        12      76           74        127             147
-62 2 54 85         22 76 102 105      122 122 98       117 122 122 9
-'''
+    return answer
 
-_ = lambda __, ___: str(bytearray([int(_) for _ in __doc__.split()][__:-___]))
-_.__code__ = type(_.__code__)(1, 1, 2, 67, _(0, 1), (None, 3, 5, _(-9, 1),
-    _(-9, 5), _(-5, 1)), (), ('',), '', '', 0, '', (), ())
-for __ in range(1, 100): _(__)
+answer=fizz_buzz(1,100)
+for i in range(len(answer)):
+    if answer[i].isdecimal():
+        print(answer[i]) 
+    else:
+        print(f'{answer[i]}({i+1})')
+
+    

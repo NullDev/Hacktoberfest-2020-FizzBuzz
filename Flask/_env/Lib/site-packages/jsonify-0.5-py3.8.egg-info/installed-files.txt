@@ -1,0 +1,8 @@
+..\jsonify\__init__.py
+..\jsonify\__pycache__\__init__.cpython-38.pyc
+..\jsonify\__pycache__\convert.cpython-38.pyc
+..\jsonify\convert.py
+PKG-INFO
+SOURCES.txt
+dependency_links.txt
+top_level.txt
