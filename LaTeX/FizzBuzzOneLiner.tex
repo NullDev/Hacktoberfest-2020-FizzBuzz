@@ -1,0 +1,4 @@
+% FizzBuzz in LaTeX, but as a one-liner
+% Author: @cnguyen-uk
+
+\documentclass{article}\usepackage{intcalc}\usepackage{etoolbox}\begin{document}\newcounter{int}\setcounter{int}{1}\loop\ifnum\value{int}<101\ifnumequal{\intcalcMod{\theint}{15}}{0}{FizzBuzz\par}{\ifnumequal{\intcalcMod{\theint}{5}}{0}{Buzz\par}{\ifnumequal{\intcalcMod{\theint}{3}}{0}{Fizz\par}{{\theint\par}}}}\addtocounter{int}{1}\repeat\end{document}
