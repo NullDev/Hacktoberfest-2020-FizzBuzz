@@ -1,0 +1,16 @@
+{# A FizzBuzz was written with Flask (small web framework for Python) and jinja. #}
+{# Author: @fernandadagostin #}
+
+{% block content %}
+{% for x in range(0,100) %}
+    {% if x % 3 ==0 and x % 5 ==0 %}
+        FizzBuzz
+    {% elif  x % 3 ==0 %}
+        Fizz
+    {% elif  x % 5 ==0 %}
+        Buzz
+    {% else %}
+        {{x}}
+    {% endif %}
+{% endfor %}
+{% endblock %}
