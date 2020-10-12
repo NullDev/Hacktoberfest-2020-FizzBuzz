@@ -1,6 +1,8 @@
 IntCode
 =======
 
+Author: [@asottile](https://github.com/asottile)
+
 - https://esolangs.org/wiki/Intcode
 - https://adventofcode.com/2019
 
