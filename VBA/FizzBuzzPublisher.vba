@@ -27,6 +27,6 @@ Sub FizzBuzz()
             Application.ActiveDocument.Pages(1).Shapes(1).TextFrame.TextRange.InsertAfter i & vbCrLf
         End If
     Next
-    
+
     ActiveDocument.ActiveView.Zoom = 100  ' Set zoom level to 100%
 End Sub
