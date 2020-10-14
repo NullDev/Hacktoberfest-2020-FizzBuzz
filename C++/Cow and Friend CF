@@ -1,0 +1,94 @@
+//////////////////////////////////////////////////////
+//                       .-.                        //
+//                      |_:_|                       //
+//                     /(_Y_)\                      //
+//.                   ( \/M\/ )                     // 
+// '.               _.'-/'-'\-'._                   //
+//   ':           _/.--'[[[[]'--.\_                 //
+//     ':        /_'  : |::"| :  '.\                //
+//       ':     //   ./ |oUU| \.'  :\               //
+//         ':  _:'..' \_|___|_/ :   :|              //  
+//           ':.  .'  |_[___]_|  :.':\              //
+//            [::\ |  :  | |  :   ; : \             //
+//             '-'   \/'.| |.' \  .;.' |            //
+//             |\_    \  '-'   :       |            //
+//             |  \    \ .:    :   |   |            //
+//             |   \    | '.   :    \  |            //
+//             /       \   :. .;       |            //
+//            /     |   |  :__/     :  \\           //
+//           |  |   |    \:   | \   |   ||          //
+//          /    \  : :  |:   /  |__|   /|          //
+//          |     : : :_/_|  /'._\  '--|_\          //
+//          /___.-/_|-'   \  \                      //
+//                        '-'                       //
+//////////////////////////////////////////////////////
+
+
+#include <bits/stdc++.h>
+using namespace std;
+#define int long long
+#define fast ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+#define pb push_back
+#define ff first
+#define ss second
+#define rep(i,a,b) for(int i=a;i<b;i++)
+#define repp(i,a,b) for(int i=a;i<=b;i++)
+#define endl '\n'
+#define mod 1000000007
+
+bool sorttt(const pair<int,int> &a, 
+              const pair<int,int> &b) 
+{ 
+    return (a.second < b.second); 
+}
+    vector<int> v[10001];
+    vector<int> ab,abc;
+    bool rec[10001]={0};
+    int d=0;
+void dfs(int x){
+    d++;
+    rec[x]=1;
+    rep(i,0,v[x].size()){
+        if(!rec[v[x][i]]){
+            dfs(v[x][i]);
+        }
+    }
+    abc.pb(d);
+    d=0;
+}
+void bfs(int x, int n){
+    bool vis[n+1];
+    rep(i,1,n+1)vis[i]=false;
+    vis[x]=true;
+    list<int> q;
+    q.pb(x);
+    while(!q.empty()){
+        int s=q.front();
+        ab.pb(s);
+        q.pop_front();
+        for(int i=0;i<v[s].size();i++){
+            if(!vis[v[s][i]]){
+                vis[v[s][i]]=true;
+                q.pb(v[s][i]);
+            }
+        }
+    }
+}
+
+signed main()
+{
+    fast
+    int t; cin>>t;
+    while(t--){
+        int n,d,f=0; cin>>n>>d;
+        int arr[n];
+        rep(i,0,n) cin>>arr[i];
+        rep(i,0,n)if(arr[i]==d){cout<<1<<endl; f=1; break;}
+        if(f)continue;
+        sort(arr,arr+n);
+        int ans=d/arr[n-1];
+        if(d%arr[n-1])ans++;
+        if(ans<2)ans=2;
+        cout<<ans<<endl;
+    }
+}
