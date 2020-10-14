@@ -1,0 +1,43 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+#define int long long
+#define fast ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+#define pb push_back
+#define ff first
+#define ss second
+#define rep(i,a,b) for(int i=a;i<b;i++)
+#define repp(i,a,b) for(int i=a;i<=b;i++)
+#define endl '\n'
+
+
+signed main()
+{
+    fast
+    int t; cin>>t;
+    while(t--){
+        int f=0,j=0,ans=0;
+        string s,t;
+        cin>>s>>t;
+        set<char> set;
+        rep(i,0,s.size()){
+            set.insert(s[i]);
+        }
+        rep(i,0,t.size()){
+            if(set.find(t[i])==set.end()){
+                f=1; break;
+            }
+        }
+        if(f==1){cout<<-1<<endl; continue;}
+        while(j!=t.size()){
+            rep(i,0,s.size()){
+                if(s[i]==t[j]){
+                    j++;
+                }
+            }
+            ans++;
+        }
+        cout<<ans<<endl;
+    }
+}
