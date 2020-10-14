@@ -1,0 +1,32 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define int long long
+#define fast ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+#define pb push_back
+#define ff first
+#define ss second
+#define rep(i,a,b) for(int i=a;i<b;i++)
+#define repp(i,a,b) for(int i=a;i<=b;i++)
+#define endl '\n'
+signed main()
+{
+    fast
+    int t; cin>>t;
+    while(t--){
+        int n,sum=0,sum1=0,flag=0; cin>>n;
+        int arr[n];
+        rep(i,0,n){
+            cin>>arr[i];
+        }
+        rep(i,0,n){
+            sum+=arr[i];
+            sum1+=arr[n-i-1];
+            if(sum<=0 or sum1<=0){
+                flag=1;
+                break;
+            }
+        }
+        if(flag==1) cout<<"NO"<<endl;
+        else cout<<"YES"<<endl;
+    }
+}
