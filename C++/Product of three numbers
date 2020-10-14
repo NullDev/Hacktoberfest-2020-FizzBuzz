@@ -1,0 +1,39 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define int long long
+#define fast ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+#define pb push_back
+#define ff first
+#define ss second
+#define rep(i,a,b) for(int i=a;i<b;i++)
+#define repp(i,a,b) for(int i=a;i<=b;i++)
+#define endl '\n'
+signed main()
+{
+    fast
+    int t; cin>>t;
+    while(t--)
+    {    int n,flag=0; cin>>n;
+        vector<int> v;
+        repp(i,2,sqrt(n)){
+            if(n%i==0){
+                repp(j,2,sqrt(n/i)){
+                    if((n/i)%j==0&&n/(i*j)!=j&&j!=i&&n/(i*j)!=i){
+                        v.pb(n/(i*j));
+                        v.pb(j);
+                        v.pb(i);
+                        flag=1;
+                        break;
+                    }
+                }
+            }
+        }
+        if(flag==1){
+            cout<<"YES"<<endl;
+            rep(i,0,3)cout<<v[i]<<" ";
+            cout<<endl;
+        }
+        else cout<<"NO"<<endl;
+    }
+
+}
