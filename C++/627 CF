@@ -1,0 +1,55 @@
+
+#include <bits/stdc++.h>
+using namespace std;
+#define int long long
+#define fast ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+#define pb push_back
+#define ff first
+#define ss second
+#define rep(i,a,b) for(int i=a;i<b;i++)
+#define repp(i,a,b) for(int i=a;i<=b;i++)
+#define endl '\n'
+#define mod 1000000007
+
+bool sorttt(const pair<int, pair<char, int> > &a, 
+              const pair<int, pair<char, int> > &b) 
+{ 
+    return (a.first > b.first); 
+}
+
+int power(int x,int n){
+    int res=1;
+    while(n>0){
+        if(n&1)
+            res=res*x;
+        x*=x;
+        n>>=1;
+    }
+    return res;
+}
+
+int bin(int x,int n){
+    int res=1;
+    while(n){
+        if(n&1) res=(res*x)%mod;
+        x=(x*x)%mod;
+        n>>=1;
+    }
+    return res;
+}
+
+signed main()
+{
+    fast
+    int t; cin>>t;
+    while(t--){
+        int n,x=0; cin>>n;
+        int arr[n];
+        rep(i,0,n){
+            cin>>arr[i];
+            if(arr[i]%2)x++;
+        }
+        if(x==n or x==0)cout<<"YES"<<endl;
+        else cout<<"NO"<<endl;
+    }
+}
