@@ -1,3 +1,7 @@
+// An implement of FizzBuzz without using division or modulo operation.
+// I use bitwise operation to check whether the number is multiple of three or five.
+// Author: @BroLeaf
+
 #include <stdio.h>
 #include <stdlib.h>
 
