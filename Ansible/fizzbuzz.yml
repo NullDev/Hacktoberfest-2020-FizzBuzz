@@ -1,0 +1,21 @@
+---
+
+# FizzBuzz in Ansible!
+# Jay DesLauriers
+#
+# Run with ansible-playbook fizzbuzz.yml
+
+- hosts: localhost
+  vars:
+    start_val: 0
+    end_val: 100
+  tasks:
+  - debug:
+      msg: >-
+        {% if item | int % 15 == 0  %}FizzBuzz
+        {% elif item | int % 3 == 0 %}Fizz
+        {% elif item | int % 5 == 0 %}Buzz
+        {% else %}{{item}}
+        {% endif %}
+    with_sequence: start="{{ start_val }}" end="{{ end_val }}"
+
