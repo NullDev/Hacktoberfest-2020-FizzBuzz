@@ -3,6 +3,8 @@ in programing contest have made a template already;*/
 // Anuranjan Srivastava (Codersaty)
 
 #include<bits/stdc++.h>
+#include<iostream>
+#include<map>
 #define mis map<int,string>
 #define mi map<int,int>
 #define loop(i,n) for(int i=1;i<=n;i++)
@@ -24,14 +26,16 @@ int main()
         else
         m[i]=i;
     }
+	cout<<endl;
+	
     loop(i,100)
     {
         if(m[i]==-2)
-            cout<<" FizzBuzz ";
+            cout<<"FizzBuzz";
         else if(m[i]==-1)
-            cout<<" Fizz ";
+            cout<<"Fizz";
         else  if(m[i]==0)
-            cout<<" Buzz ";
+            cout<<"Buzz";
         else
             cout<<" "<<m[i]<<" ";
     }
