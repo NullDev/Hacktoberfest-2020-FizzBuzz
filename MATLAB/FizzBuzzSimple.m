@@ -2,12 +2,12 @@
 % Author: @veotani
 for number = 1:101
     if  mod(number, 15) == 0
-        disp('FizzBuzz')
+        fprintf('FizzBuzz')
     elseif  mod(number, 3) == 0
-        disp('Fizz')
+        fprintf('Fizz')
     elseif mod(number, 5) == 0
-        disp('Buzz')
+        fprintf('Buzz')
     else 
-        disp(number)
+        fprintf(number)
     end
 end
