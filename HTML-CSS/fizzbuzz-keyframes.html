@@ -17,8 +17,8 @@
       }
       #fizz-buzz::after {
         content: "";
-        height: 1rem;
-        background: white;
+        height: 2rem;
+        background: #D3D3D3;;
         position: absolute;
         top: 0;
         width: 100%;
@@ -26,9 +26,17 @@
       }
       @keyframes loader {
         from {
+          transform: rotate(2deg);
+          -webkit-transform: translateX(-100%);
+          -moz-transform: translateX(-100%);
+          -o-transform: translateX(-100%);
           transform: translateX(-100%);
         }
         to {
+          transform: rotate(-2deg);
+          -webkit-transform: translateX(0%);
+          -moz-transform: translateX(0%);
+          -o-transform: translateX(0%);
           transform: translateX(0%);
         }
       }
@@ -44,15 +52,15 @@
       }
       @keyframes fizz-buzz {
         /* keyframes generate by python code
-        for i in range(1, 101):
+        for i in range(1, 102):
           text = i
-          color = "black"
+          color = "voilet"
           if i % 15 == 0:
               text = "FizzBuzz"
-              color = "red"
+              color = "indigo"
           elif i % 3 == 0:
               text = "Fizz"
-              color = "blue"
+              color = "green"
           elif i % 5 == 0:
               text = "Buzz"
               color = "green"
@@ -554,6 +562,10 @@
         }
 
         100% {
+          content: "Buzz";
+          background-color: green;
+        }
+         101% {
           content: "Buzz";
           background-color: green;
         }
