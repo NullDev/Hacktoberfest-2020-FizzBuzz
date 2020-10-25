@@ -1,3 +1,5 @@
+// Author: @Tuatarian
+
 for (i in 1..101) {
   if (i % 15 == 0) { 
     System.print("FizzBuzz") 
