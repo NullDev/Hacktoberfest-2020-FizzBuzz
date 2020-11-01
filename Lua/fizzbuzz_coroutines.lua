@@ -2,6 +2,7 @@
 -- Author: @darrenkearney
 
 function getFizzBuzz()
+
    local function getFizzHelper()
       co = coroutine.create(function ()
       coroutine.yield('')
@@ -52,10 +53,10 @@ function getFizzBuzz()
 end
 
 for index = 1, 100 do
-	fizzbuzz = getFizzBuzz()
-	if fizzbuzz == '' then
-		print( index )
-	else
-		print( fizzbuzz )
-	end
+   fizzbuzz = getFizzBuzz()
+   if fizzbuzz == '' then
+      print( index )
+   else
+      print( fizzbuzz )
+   end
 end
